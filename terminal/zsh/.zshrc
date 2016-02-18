@@ -1,9 +1,10 @@
 # Path to your oh-my-zsh installation.
-export DOTFILES=$HOME/.dotfiles
-export ZSH=$HOME/.oh-my-zsh
-export ZSH_FISH_COMPLETIONS=${DOTFILES}/terminal/zsh/fish-completions
 
-# Set name of the theme to load.
+
+ #Set name of the theme to load.
+ export DOTFILES=$HOME/.dotfiles
+ export ZSH=$HOME/.oh-my-zsh
+ export ZSH_FISH_COMPLETIONS=${DOTFILES}/terminal/zsh/fish-completions
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
@@ -51,30 +52,15 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fbterm tmux)
+plugins=(git fish-completion)
 
 # User configuration
-# Enable 256 colors
-[[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
-export PATH="$PATH:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
-export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+  export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+source ${ZSH_FISH_COMPLETIONS}/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
-
-export EDITOR=vim
-
-# Load zsh-syntax-highlighting.
-source ${ZSH_FISH_COMPLETIONS}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Load zsh-autosuggestions.
-source ${ZSH_FISH_COMPLETIONS}/zsh-autosuggestions/autosuggestions.zsh
-
-# Enable autosuggestions automatically.
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -100,6 +86,15 @@ zle -N zle-line-init
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# added by travis gem
-[ -f /home/manu343726/.travis/travis.sh ] && source /home/manu343726/.travis/travis.sh
+alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias grep='grep --color=tty -d skip'
+alias cp="cp -i"			#confirm before overwriting
+alias df='df-h'				#human-readable sizes
+alias free='free -m'			#show sizes in MB
+alias np='nano PKGBUILD'
+alias fixit='sudo rm -f /var/lib/pacman/db.lck'
+alias update='yaourt -Syua'
+alias con='nano $HOME/.i3/config'
+alias shutdown='sudo shutdown 0'
