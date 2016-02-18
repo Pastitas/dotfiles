@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export DOTFILES_SRC_DIR=$HOME/.dotfiles
-export DOTFILES_URL=https://github.com/Manu343726/dotfiles
+export DOTFILES_URL=https://github.com/Raycer/dotfiles
 export DOTFILES_LIB=$DOTFILES_SRC_DIR/.dotfileslib
 export OPTPARSE_LIB=$DOTFILES_LIB/3rdParty/optparse
 
