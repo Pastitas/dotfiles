@@ -6,3 +6,4 @@ if [ ! -d $themes ] then
 fi
 
 dotfiles_install_component .gtkrc-2.0 $HOME/
+dotfiles_install_component diehard4 $themes/
