@@ -4,10 +4,10 @@ icons=$HOME/.icons
 wallpapers=/root/Pictures/
 lightDM=/etc/lightdm/
 
-if [ ! -d $themes ] then
+if [ ! -d $themes ]; then
     mkdir $themes
 fi
-if [ ! -d $icons ] then
+if [ ! -d $icons ]; then
     mkdir $icons
 fi
 
