@@ -2,8 +2,8 @@
 themes=$HOME/.themes
 icons=$HOME/.icons
 pixmaps=/usr/share/pixmaps
-lightDM=/etc/lightdm/
-nitrogen=$HOME/.config/nitrogen/
+lightDM=/etc/lightdm
+nitrogen=$HOME/.config/nitrogen
 
 
 if [ ! -d $themes ]; then
