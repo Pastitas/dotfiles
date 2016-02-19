@@ -2,10 +2,10 @@
 themes=$HOME/.themes
 icons=$HOME/.icons
 
-if [ ! -d $themes ] then
+if [ ! -d $themes ]; then
     mkdir $themes
 fi
-if [ ! -d $icons ] then
+if [ ! -d $icons ]; then
     mkdir $icons
 fi
 
