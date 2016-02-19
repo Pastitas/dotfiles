@@ -16,7 +16,7 @@ if [ ! -d $nitrogen ]; then
     mkdir -r $nitrogen
 fi
 
-dotfiles_install_package nitrogen
+dotfiles_install_package nitrogen lightdm
 
 dotfiles_install_component .gtkrc-2.0 $HOME/
 dotfiles_install_component .xinitrc $HOME/
