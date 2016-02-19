@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1900"
+   height="48px"
+   width="48px"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="notification-message-im.svg">
+  <defs
+     id="defs17" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="718"
+     id="namedview15"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="2.8395319"
+     inkscape:cy="22.549304"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <metadata
+     id="metadata1905">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>orca</rdf:li>
+            <rdf:li>screen reader</rdf:li>
+            <rdf:li>screen magnifier</rdf:li>
+            <rdf:li>braille monitor</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>A comic strip bubble with a magnify glass and a &quot;O&quot; in Braille insidX</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>This icon was inspired by existing access tecnology icon in GNOME control center</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <path
+       id="path2989"
+       d="M 6.84375 8.15625 C 5.2730492 8.15625 4 9.2088307 4 10.5 L 4 32.15625 C 4 33.447419 5.2730492 34.46875 6.84375 34.46875 L 22.84375 34.46875 C 36.162089 42.11111 37.6875 43 37.6875 43 C 37.6875 43 37.42482 42.427024 33.96875 34.46875 L 41.15625 34.46875 C 42.726951 34.46875 44 33.447419 44 32.15625 L 44 10.5 C 44 9.2088307 42.726951 8.15625 41.15625 8.15625 L 6.84375 8.15625 z "
+       style="fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round" />
+    <rect
+       id="rect3687"
+       style="fill:none"
+       rx="0"
+       ry="0"
+       height="48"
+       width="48"
+       y="0"
+       x="0" />
+    <path
+       style="fill:#000000;fill-rule:evenodd"
+       d="M 6.84375 8.15625 C 5.2730492 8.15625 4 9.2088307 4 10.5 L 4 32.15625 C 4 33.447419 5.2730492 34.46875 6.84375 34.46875 L 22.84375 34.46875 C 36.162089 42.11111 37.6875 43 37.6875 43 C 37.6875 43 37.42482 42.427024 33.96875 34.46875 L 41.15625 34.46875 C 42.726951 34.46875 44 33.447419 44 32.15625 L 44 10.5 C 44 9.2088307 42.726951 8.15625 41.15625 8.15625 L 6.84375 8.15625 z "
+       id="rect1908" />
+    <g
+       id="flowRoot2989"
+       style="font-size:4px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Sans"
+       transform="matrix(1.0373812,0,0,1.0373812,8.6444241,-3.8222761)">
+      <path
+         id="path3055"
+         style="font-size:22px;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Bold"
+         d="m 16.56225,20.967103 c -5e-6,1.18801 -0.044,2.295343 -0.132,3.322 -0.08801,1.026674 -0.205338,2.068006 -0.352,3.124 l -2.508,0 c -0.146668,-1.055994 -0.271335,-2.097326 -0.374,-3.124 -0.088,-1.026657 -0.132001,-2.13399 -0.132,-3.322 l 0,-3.938 3.498,0 0,3.938 m 0.286,9.57 c -5e-6,0.645335 -0.212672,1.144001 -0.638,1.496 -0.410671,0.352 -0.880004,0.528 -1.408,0.528 -0.528003,0 -1.004669,-0.176 -1.43,-0.528 -0.410668,-0.351999 -0.616001,-0.850665 -0.616,-1.496 -10e-7,-0.645331 0.205332,-1.143997 0.616,-1.496 0.425331,-0.351996 0.901997,-0.527996 1.43,-0.528 0.527996,4e-6 0.997329,0.176004 1.408,0.528 0.425328,0.352003 0.637995,0.850669 0.638,1.496"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

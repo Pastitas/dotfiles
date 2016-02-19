@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="22"
+   height="22"
+   id="svg2"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="applets-screenshooter.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="10.727273"
+     inkscape:cx="10.90678"
+     inkscape:cy="11"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs9" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+        <dc:title />
+        <dc:description>A photo camera.</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Design based on existing icon in HighContast GNOME icon theme.</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     width="48"
+     height="48"
+     ry="0"
+     x="0"
+     y="-26"
+     id="rect9880"
+     style="fill:none" />
+  <path
+     d="M 3.0994366,6.2783648 H 7.0496028 L 7.9223698,4.0962819 H 14.03171 l 0.872763,2.1820829 h 3.950559 c 0.470857,0 0.849634,0.3787647 0.849634,0.8496337 l 0.04583,10.4962835 c 0,0.470852 -0.379223,0.849633 -0.850071,0.849633 H 3.1453004 c -0.4710306,0 -0.8501153,-0.378764 -0.8501153,-0.849633 L 2.2495009,7.1279985 c 0,-0.4708565 0.3790855,-0.8496337 0.8499403,-0.8496337 z"
+     id="path9152"
+     style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 3.0994366,6.2783648 H 7.0496028 L 7.9223698,4.0962819 H 14.03171 l 0.872763,2.1820829 h 3.950559 c 0.470857,0 0.849634,0.3787647 0.849634,0.8496337 l 0.04583,10.4962835 c 0,0.470852 -0.379223,0.849633 -0.850071,0.849633 H 3.1453004 c -0.4710306,0 -0.8501153,-0.378764 -0.8501153,-0.849633 L 2.2495009,7.1279985 c 0,-0.4708565 0.3790855,-0.8496337 0.8499403,-0.8496337 z"
+     id="rect8423"
+     style="fill-rule:evenodd"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 11.000167,8.0007613 c -2.3909341,0 -4.3393776,1.9654609 -4.3393776,4.3638147 0,2.398349 1.9484435,4.363814 4.3393776,4.363814 2.390496,0 4.338939,-1.965465 4.338939,-4.363814 0,-2.3983538 -1.948443,-4.3638147 -4.338939,-4.3638147 z m 0,2.1421957 c 1.220558,0 2.201543,0.985351 2.201543,2.221619 0,1.236705 -0.980985,2.221618 -2.201543,2.221618 -1.2209958,0 -2.2019808,-0.984913 -2.2019808,-2.221618 0,-1.236268 0.980985,-2.221619 2.2019808,-2.221619 z"
+     id="path12070"
+     style="fill:#ffffff;fill-rule:evenodd"
+     inkscape:connector-curvature="0" />
+</svg>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="48"
+   height="48"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="appointment-reminder.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="718"
+     id="namedview46"
+     showgrid="false"
+     inkscape:zoom="6.9532167"
+     inkscape:cx="20.330407"
+     inkscape:cy="21.280542"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs21">
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770">
+      <feColorMatrix
+         id="feColorMatrix3772"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3774"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770-3">
+      <feColorMatrix
+         id="feColorMatrix3772-9"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3774-5"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770-4">
+      <feColorMatrix
+         id="feColorMatrix3772-6"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3774-8"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770-4-5">
+      <feColorMatrix
+         id="feColorMatrix3772-6-0"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3774-8-7"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770-1">
+      <feColorMatrix
+         id="feColorMatrix3772-3"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3774-4"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3824">
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="1"
+         type="saturate"
+         id="feColorMatrix3826" />
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic"
+         id="feColorMatrix3828" />
+      <feColorMatrix
+         id="feColorMatrix3830"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feColorMatrix
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         values="1"
+         type="saturate"
+         id="feColorMatrix3832" />
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic"
+         id="feColorMatrix3834" />
+      <feColorMatrix
+         id="feColorMatrix3836"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feColorMatrix
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         values="1"
+         type="saturate"
+         id="feColorMatrix3838" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic"
+         id="feColorMatrix3840" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:date>December 2008</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>office</rdf:li>
+            <rdf:li>calendar</rdf:li>
+            <rdf:li>appointmens</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Inspired by calendar icon on Nokia E71</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,2)"
+     id="layer1">
+    <rect
+       width="40"
+       height="36"
+       ry="5.8221002"
+       x="4"
+       y="2"
+       id="rect3795"
+       style="stroke:#ffffff;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <rect
+       width="48"
+       height="48"
+       x="0"
+       y="-6"
+       id="rect3155"
+       style="fill:none" />
+    <rect
+       width="40"
+       height="36"
+       ry="5.8221002"
+       x="4"
+       y="2"
+       id="rect3241"
+       style="stroke:none" />
+    <rect
+       width="40"
+       height="36"
+       ry="5.8221002"
+       x="4"
+       y="2"
+       id="rect3221" />
+    <rect
+       width="34"
+       height="30"
+       ry="2.9756999"
+       x="7"
+       y="5"
+       id="rect3223"
+       style="fill:#ffffff" />
+    <path
+       d="M 15,11 V 31"
+       id="path3233"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round" />
+    <path
+       d="M 33,11 V 31"
+       id="path3235"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round" />
+    <path
+       d="M 24,11 V 31"
+       id="path3237"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round" />
+    <path
+       d="M 11,18 H 37"
+       id="path3239"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round" />
+    <path
+       d="M 11,11 H 37"
+       id="path3247"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round" />
+    <path
+       d="M 11,26 H 37"
+       id="path3289"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round" />
+  </g>
+  <path
+     d="M 31.578316,22.726798 21.156636,42 H 42 L 31.578316,22.726798 z"
+     id="path5508"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 31.578316,22.726798 21.156636,42 H 42 L 31.578316,22.726798 z"
+     id="path9"
+     style="fill:none;stroke:#d30000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 32.07863,23.740925 22.269991,41.729246 H 41.887273 L 32.07863,23.740925 z"
+     id="path11"
+     style="fill:#ffffff;fill-opacity:1;stroke:none"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 30.852676,36.168041 -0.61304,-7.066839 h 3.678241 l -0.613041,7.066839 h -2.45216 z"
+     id="path15"
+     style="fill:#d30000;fill-opacity:1;stroke:none"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 33.779101,38.777471 a 1.8199631,1.9373585 0 0 1 -3.639926,0 1.8199631,1.9373585 0 1 1 3.639926,0 z"
+     id="path6965"
+     style="fill:#d30000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.15707839;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+</svg>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="48"
+   height="48"
+   id="svg2">
+  <defs
+     id="defs13" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+        <dc:title></dc:title>
+        <dc:date>May 2009</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>gnome.org</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>system</rdf:li>
+            <rdf:li>monitor</rdf:li>
+            <rdf:li>status</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="60"
+       height="60"
+       x="0"
+       y="0"
+       id="rect1306"
+       style="fill:none;display:none" />
+    <rect
+       width="48"
+       height="48"
+       rx="0"
+       ry="0.16787"
+       x="0"
+       y="0"
+       id="rect2386"
+       style="fill:none" />
+    <rect
+       width="40"
+       height="40"
+       ry="4.6679001"
+       x="4"
+       y="4"
+       id="rect3160"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:8;stroke-linejoin:round" />
+    <rect
+       width="40"
+       height="40"
+       ry="3.9179001"
+       x="4"
+       y="4"
+       id="rect3158" />
+    <rect
+       width="32"
+       height="32"
+       ry="2.9179001"
+       x="8"
+       y="8"
+       id="rect3162"
+       style="fill:#ffffff" />
+    <path
+       d="M 35.938307,16.881355 22.232404,22.246833 21.364889,36.939945 12.026659,25.562881 -2.2153973,29.278245 5.719162,16.881355 -2.2153973,4.4844653 12.026659,8.19983 l 9.33823,-11.377064 0.867515,14.693112 z"
+       transform="matrix(0.58189564,-0.18527026,0.18527026,0.58189564,11.981497,18.090006)"
+       id="path2994"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+</svg>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1315"
+   sodipodi:docname="network-server.svg"
+   height="48px"
+   sodipodi:version="0.32"
+   width="48px"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886">
+  <defs
+     id="defs17" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     showgrid="true"
+     borderopacity="1.0"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="-44.949152"
+     inkscape:cy="24"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <metadata
+     id="metadata1320">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Network Server Icon</dc:title>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>server</rdf:li>
+            <rdf:li>network</rdf:li>
+            <rdf:li>remote</rdf:li>
+            <rdf:li>resource</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>A remote server or resource icon</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       id="rect1323"
+       style="fill:none"
+       rx="0"
+       ry="0"
+       height="48"
+       width="48"
+       y="0"
+       x="0" />
+    <rect
+       id="rect2179"
+       style="fill-rule:evenodd;stroke:#fff;stroke-width:8;fill:#fff;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="3.2168"
+       height="39"
+       width="24"
+       y="5"
+       x="12" />
+    <path
+       id="path6567"
+       sodipodi:nodetypes="cc"
+       style="stroke:#fff;stroke-linecap:round;stroke-width:12;fill:none;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m6 32h6" />
+    <path
+       id="path7442"
+       sodipodi:nodetypes="cc"
+       style="stroke:#fff;stroke-linecap:round;stroke-width:12;fill:none;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m36 32h6" />
+    <rect
+       id="rect2198"
+       style="fill-rule:evenodd"
+       ry="3.2168"
+       height="39"
+       width="24"
+       y="5"
+       x="12" />
+    <rect
+       id="rect3054"
+       style="fill:#fff;fill-rule:evenodd"
+       ry="1.2615"
+       height="31"
+       width="16"
+       y="9"
+       x="16" />
+    <path
+       id="path3929"
+       style="stroke:#000;stroke-width:4;fill:none"
+       d="m18 13h12" />
+    <path
+       id="path4804"
+       style="stroke:#000;stroke-width:4;fill:none"
+       d="m18 19h12" />
+    <path
+       id="path4806"
+       style="stroke:#000;stroke-width:4;fill:none"
+       d="m18 25h12" />
+    <path
+       id="path5690"
+       sodipodi:nodetypes="cc"
+       style="stroke:#000;stroke-linecap:round;stroke-width:4;fill:none"
+       d="m36 32h6" />
+    <path
+       id="path6565"
+       sodipodi:nodetypes="cc"
+       style="stroke:#000;stroke-linecap:round;stroke-width:4;fill:none"
+       d="m6 32h6" />
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg2"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="applets-screenshooter.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="736"
+     inkscape:window-height="480"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs9" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+        <dc:title />
+        <dc:description>A photo camera.</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Design based on existing icon in HighContast GNOME icon theme.</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     width="48"
+     height="48"
+     ry="0"
+     x="0"
+     y="0"
+     id="rect9880"
+     style="fill:none" />
+  <path
+     d="m 5.9529,12.058 h 9.0521 l 2,-5.0004 h 14 l 2,5.0004 h 9.053 c 1.079,0 1.947,0.868 1.947,1.947 l 0.105,24.053 c 0,1.079 -0.869,1.947 -1.948,1.947 H 6.058 c -1.0794,0 -1.9481,-0.868 -1.9481,-1.947 L 4.0052,14.005 c 0,-1.079 0.8687,-1.947 1.9477,-1.947 z"
+     id="path9152"
+     style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     d="m 5.9529,12.058 h 9.0521 l 2,-5.0004 h 14 l 2,5.0004 h 9.053 c 1.079,0 1.947,0.868 1.947,1.947 l 0.105,24.053 c 0,1.079 -0.869,1.947 -1.948,1.947 H 6.058 c -1.0794,0 -1.9481,-0.868 -1.9481,-1.947 L 4.0052,14.005 c 0,-1.079 0.8687,-1.947 1.9477,-1.947 z"
+     id="rect8423"
+     style="fill-rule:evenodd" />
+  <path
+     d="m 24.058,16.005 c -5.479,0 -9.944,4.504 -9.944,10 0,5.496 4.465,10 9.944,10 5.478,0 9.943,-4.504 9.943,-10 0,-5.496 -4.465,-10 -9.943,-10 z m 0,4.909 c 2.797,0 5.045,2.258 5.045,5.091 0,2.834 -2.248,5.091 -5.045,5.091 -2.798,0 -5.046,-2.257 -5.046,-5.091 0,-2.833 2.248,-5.091 5.046,-5.091 z"
+     id="path12070"
+     style="fill:#ffffff;fill-rule:evenodd" />
+</svg>

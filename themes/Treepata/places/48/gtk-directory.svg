@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   id="svg1358"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="gtk-directory.svg"><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1366"
+   inkscape:window-height="717"
+   id="namedview10"
+   showgrid="false"
+   inkscape:zoom="9.8333333"
+   inkscape:cx="43.129202"
+   inkscape:cy="15.959601"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg1358" /><defs
+   id="defs9" />
+<metadata
+   id="metadata1375">
+  <rdf:RDF>
+    <cc:Work
+   rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type
+   rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      <dc:title />
+      <dc:description>A folder</dc:description>
+      <cc:license
+   rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      <dc:contributor>
+        <cc:Agent>
+          <dc:title />
+        </cc:Agent>
+      </dc:contributor>
+      <dc:subject>
+        <rdf:Bag>
+          <rdf:li>folder</rdf:li>
+          <rdf:li>directory</rdf:li>
+        </rdf:Bag>
+      </dc:subject>
+    </cc:Work>
+    <cc:License
+   rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+     rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+     rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+     rdf:resource="http://web.resource.org/cc/Notice" /><cc:permits
+     rdf:resource="http://web.resource.org/cc/DerivativeWorks" /><cc:requires
+     rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+     rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata>
+	<path
+   inkscape:connector-curvature="0"
+   style="stroke:#ffffff;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+   id="path3753"
+   d="M 6.9999999,8.9999995 C 4.9999999,8.9999995 4,9.9999992 4,11.999999 V 37 c 0,2 1.9999999,4 3.9999999,4 H 40 c 1.999999,0 4,-2 4,-4 V 18.999999 c 0,-1.999999 -2.000001,-4 -4,-4 H 21.999999 v -3 c 0,-1.9999998 -1,-2.9999995 -2.999999,-2.9999995 H 6.9999999 z" /><path
+   d="M 6.9999999,8.9999995 C 4.9999999,8.9999995 4,9.9999992 4,11.999999 V 37 c 0,2 1.9999999,4 3.9999999,4 H 40 c 1.999999,0 4,-2 4,-4 V 18.999999 c 0,-1.999999 -2.000001,-4 -4,-4 H 21.999999 v -3 c 0,-1.9999998 -1,-2.9999995 -2.999999,-2.9999995 H 6.9999999 z"
+   id="path1365"
+   style="stroke:none"
+   inkscape:connector-curvature="0" /><rect
+   width="51"
+   height="51"
+   x="-1.75"
+   y="0.15254237"
+   id="rect4762"
+   style="fill:none" />
+<rect
+   width="14.583427"
+   height="14.581301"
+   rx="0.92691183"
+   ry="0.96384871"
+   x="23.958284"
+   y="21.460516"
+   id="rect5523"
+   style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.56428993;stroke-miterlimit:3.9000001;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" /><rect
+   width="17.500114"
+   height="17.497562"
+   rx="0"
+   ry="0"
+   x="22.499943"
+   y="20.002384"
+   id="rect6226"
+   style="fill:none;stroke-width:2;stroke-miterlimit:3.9000001;stroke-dasharray:none;stroke-dashoffset:0" /><rect
+   width="11.083406"
+   height="11.08179"
+   rx="0.88056672"
+   ry="0.98609132"
+   x="25.708298"
+   y="23.210268"
+   id="rect3754"
+   style="fill:#faffff;fill-opacity:1;stroke:none" /></svg>

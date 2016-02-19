@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg1307">
+  <defs
+     id="defs13">
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3824-2">
+      <feColorMatrix
+         id="feColorMatrix3826-3"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3828-0"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3830-0" />
+      <feColorMatrix
+         id="feColorMatrix3832-4"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3834-4"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3836-3" />
+      <feColorMatrix
+         id="feColorMatrix3838-7"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3840-1"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3824-2-5">
+      <feColorMatrix
+         id="feColorMatrix3826-3-6"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3828-0-3"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3830-0-7" />
+      <feColorMatrix
+         id="feColorMatrix3832-4-3"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3834-4-0"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3836-3-0" />
+      <feColorMatrix
+         id="feColorMatrix3838-7-1"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3840-1-1"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata1312">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>new email message</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+        <dc:description>A mail, the side with stamp and address</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="38"
+       height="30"
+       rx="3.9631"
+       ry="3.9649"
+       x="5"
+       y="9"
+       id="rect4006"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:8" />
+    <rect
+       width="38"
+       height="30"
+       rx="4.0290999"
+       ry="3.9649"
+       x="5"
+       y="9"
+       id="rect2248"
+       style="fill-rule:evenodd" />
+    <rect
+       width="30"
+       height="22"
+       rx="0"
+       ry="0"
+       x="9"
+       y="13"
+       id="rect3123"
+       style="fill:#ffffff;fill-rule:evenodd" />
+    <rect
+       width="5.9506001"
+       height="7.177"
+       ry="1.5802"
+       x="30"
+       y="16"
+       id="rect2164"
+       style="fill-rule:evenodd" />
+    <path
+       d="m 13.25,24.75 h 12"
+       id="path3052"
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round" />
+    <path
+       d="M 13.25,29.75 H 34.073"
+       id="path3939"
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round" />
+  </g>
+  <rect
+     width="29.084745"
+     height="29.084745"
+     x="18.711864"
+     y="18.915255"
+     id="rect4035"
+     style="fill:none" />
+  <path
+     d="M 25.437711,25.641101 41.070763,41.274152"
+     id="path7"
+     style="fill-rule:evenodd" />
+  <path
+     d="M 22.95339,28.004237 38.707627,43.758475 43.555085,38.911017 27.800847,23.15678 22.95339,28.004237 z"
+     id="path9"
+     style="fill-rule:evenodd;stroke:#ffffff;stroke-width:4.84745741;stroke-linejoin:round" />
+  <path
+     d="M 22.95339,38.911017 27.800847,43.758475 43.555085,28.125423 38.58644,23.15678 22.95339,38.911017 z"
+     id="path11"
+     style="fill-rule:evenodd;stroke:#ffffff;stroke-width:4.84745741;stroke-linejoin:round" />
+  <path
+     d="M 22.95339,28.004237 38.707627,43.758475 43.555085,38.911017 27.800847,23.15678 22.95339,28.004237 z"
+     id="path13"
+     style="fill-rule:evenodd" />
+  <path
+     d="M 41.070763,25.641101 25.437711,41.274152"
+     id="path15"
+     style="fill-rule:evenodd" />
+  <path
+     d="M 22.95339,38.911017 27.800847,43.758475 43.555085,28.004237 38.707627,23.15678 22.95339,38.911017 z"
+     id="path17"
+     style="fill-rule:evenodd" />
+</svg>

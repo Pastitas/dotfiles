@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg2383">
+  <defs
+     id="defs11" />
+  <metadata
+     id="metadata2388">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="48"
+       height="48"
+       x="0"
+       y="0"
+       id="rect2395"
+       style="fill:none" />
+    <path
+       d="M 11.195,35 C 16,35 19,35 24,34 c 3,1 9,1 12.285,1 9.409,0 11.5,-16.545 -1.045,-13 C 38.376,13.727 27.922,9 21.649,17.273 18.513,13.727 10.658,13.639 11.703,21.912 1.249,18.366 1.7856,35 11.195,35 z"
+       id="path3253"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:8" />
+    <path
+       d="M 11.195,35 C 16,35 19,35 24,34 c 3,1 9,1 12.285,1 9.409,0 11.5,-16.545 -1.045,-13 C 38.376,13.727 27.922,9 21.649,17.273 18.513,13.727 10.658,13.639 11.703,21.912 1.249,18.366 1.7856,35 11.195,35 z"
+       id="path3247"
+       style="fill-rule:evenodd" />
+    <path
+       d="m 21,36 c 5,-1 8.333,-3.333 12,-5"
+       id="path3257"
+       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:round" />
+  </g>
+  <path
+     d="M 31.525423,23.389831 22.305085,39.661016 H 40.745763 L 31.525423,23.389831 z"
+     id="path3771"
+     style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="M 31.525423,23.389831 22.305085,39.661016 H 40.745763 L 31.525423,23.389831 z"
+     id="path9"
+     style="fill:none;stroke:#d30000;stroke-width:3.25423717;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+  <path
+     d="M 31.525423,23.932204 22.847458,39.118643 H 40.20339 L 31.525423,23.932204 z"
+     id="path11"
+     style="fill:#ffffff;fill-opacity:1;stroke:none" />
+  <path
+     d="m 30.440677,34.737002 -0.542373,-5.9661 h 3.254238 l -0.542373,5.9661 h -2.169492 z"
+     id="path15"
+     style="fill:#d30000;fill-opacity:1;stroke:none" />
+  <path
+     d="m 33.118644,36.940407 a 1.6101695,1.6355932 0 0 1 -3.220339,0 1.6101695,1.6355932 0 1 1 3.220339,0 z"
+     id="path6965"
+     style="fill:#d30000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-opacity:1" />
+</svg>

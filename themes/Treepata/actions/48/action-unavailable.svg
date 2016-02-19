@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg3304">
+  <defs
+     id="defs13" />
+  <metadata
+     id="metadata3309">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="48"
+       height="48"
+       rx="0"
+       x="0"
+       y="0"
+       id="rect3312"
+       style="fill:none" />
+    <path
+       d="m 43.988319,24.006371 a 19.99469,19.99469 0 1 1 -39.9893795,0 19.99469,19.99469 0 1 1 39.9893795,0 z"
+       id="path7705"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:6" />
+    <path
+       d="m 42.985708,24.006371 a 18.992079,19.117405 0 1 1 -37.9841573,0 18.992079,19.117405 0 1 1 37.9841573,0 z"
+       id="path4768"
+       style="fill-rule:evenodd" />
+    <path
+       d="m 36.748488,24 a 12.748488,12.748488 0 1 1 -25.496976,0 12.748488,12.748488 0 1 1 25.496976,0 z"
+       transform="matrix(0.95071,0,0,0.95071,1.183,1.183)"
+       id="path6249"
+       style="fill:#ffffff;fill-rule:evenodd" />
+    <rect
+       width="31.867001"
+       height="7.3354001"
+       ry="0"
+       x="-15.934"
+       y="30.273001"
+       transform="matrix(-0.70711,0.70711,0.70711,0.70711,0,0)"
+       id="rect6977"
+       style="fill-rule:evenodd" />
+    <rect
+       width="31.867146"
+       height="7.3354335"
+       ry="0"
+       x="18.007282"
+       y="-3.6682165"
+       transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
+       id="rect2990"
+       style="fill-rule:evenodd" />
+  </g>
+</svg>

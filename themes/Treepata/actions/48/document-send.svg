@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   id="svg2"
+   xml:space="preserve"><defs
+   id="defs12" /><metadata
+   id="metadata19"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title><dc:creator><cc:Agent><dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title></cc:Agent></dc:creator><cc:license
+         rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /><dc:subject><rdf:Bag><rdf:li>document new</rdf:li><rdf:li>document add</rdf:li></rdf:Bag></dc:subject><dc:description>A paper sheet with a + sign</dc:description></cc:Work><cc:License
+       rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+         rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/Notice" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/DerivativeWorks" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata>
+	<rect
+   width="48"
+   height="48"
+   x="0"
+   y="0"
+   id="rect3319"
+   style="fill:none" /><path
+   d="M 39,41 H 9 V 6 h 17 l 13,14 v 21 z"
+   id="path4775"
+   style="fill:#ffffff;stroke:#ffffff;stroke-width:12;stroke-linejoin:round" /><path
+   d="M 39,41 H 9 V 6 h 17 l 13,14 v 21 z"
+   id="path7"
+   style="stroke:#000000;stroke-width:4;stroke-linejoin:round" /><path
+   d="M 36.991,20 36.997,39.004 11,39 11.017,8.018 24.969,8.0339 36.991,19.9999 z"
+   id="path9"
+   style="fill:#ffffff" />
+<path
+   d="m 13.784218,37.259 6.421308,-6.421307 3.745762,3.745762 3.745763,-3.745762 6.421308,6.421307 -20.334141,0 z"
+   id="path6061"
+   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" /><path
+   d="m 12.714,23.346168 6.421307,6.421306 -6.421307,6.421308 0,-12.842614 z"
+   id="path5088"
+   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" /><path
+   d="m 13.784218,22.275949 10.16707,10.167071 10.167071,-10.167071 -20.334141,0 z"
+   id="path2160"
+   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" /><path
+   d="m 35.188576,23.346167 -6.421307,6.421307 6.421307,6.421308 0,-12.842615 z"
+   id="path6059"
+   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" /></svg>

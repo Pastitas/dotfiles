@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg249">
+  <defs
+     id="defs16" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:creator>
+        <dc:source />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:contributor>
+        <dc:date />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer5">
+    <rect
+       width="48"
+       height="48"
+       x="0"
+       y="0"
+       id="rect1493"
+       style="fill:none" />
+    <path
+       d="M 40,20 A 20,20 0 1 1 0,20 20,20 0 1 1 40,20 z"
+       id="path3244"
+       style="fill:#ffffff" />
+    <path
+       d="m 29.5,29.5 2,6.5 7,7.5 c 0.482,0.517 2.732,1.268 4.5,-0.5 1.5,-1.5 1.033,-4.002 0.5,-4.5 l -7.5,-7 -6.5,-2 z"
+       id="path2682"
+       style="color:#000000;fill:#ffffff;stroke:#ffffff;stroke-width:8;stroke-linecap:round;stroke-linejoin:round" />
+    <path
+       d="M 36,20 A 16,16 0 1 1 4,20 16,16 0 1 1 36,20 z"
+       id="path4119" />
+    <path
+       d="M 32,20 A 12,12 0 1 1 8,20 12,12 0 1 1 32,20 z"
+       id="path4994"
+       style="fill:#ffffff" />
+    <path
+       d="m 29.5,29.5 2,6.5 7,7.5 c 0.482,0.517 2.732,1.268 4.5,-0.5 1.5,-1.5 1.033,-4.002 0.5,-4.5 l -7.5,-7 -6.5,-2 z"
+       id="path15511"
+       style="color:#000000" />
+    <rect
+       width="17"
+       height="17"
+       x="11.5"
+       y="11.5"
+       id="rect17259"
+       style="fill:none" />
+    <path
+       d="M 25,20 H 14"
+       id="path20757"
+       style="fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       d="M -3.339746,17 -20.660254,17 -12,2 z"
+       transform="matrix(0,-0.96188022,0.4,0,9.2,8.4574374)"
+       id="path3763"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="M -3.339746,17 -20.660254,17 -12,2 z"
+       transform="matrix(0,-0.96188022,-0.4,0,30.8,8.4574374)"
+       id="path3765"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+  </g>
+</svg>

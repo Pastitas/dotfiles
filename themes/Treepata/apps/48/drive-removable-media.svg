@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg2"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="drive-removable-media.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs11" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+        <dc:title />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Shape based on exising PNG icon in gnome-icon-theme</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>hard disk</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/GPL/2.0/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="48"
+       height="48"
+       rx="0"
+       ry="0"
+       x="0"
+       y="0"
+       id="rect6226"
+       style="fill:none" />
+    <path
+       d="M 7.3796606,8 H 40.58305 c 3.035897,0 5.533898,2.498001 5.533898,5.533898 v 19.922034 c 0,3.035896 -2.498001,5.533898 -5.533898,5.533898 H 7.3796606 c -3.0357859,0 -5.5338983,-2.498002 -5.5338983,-5.533898 V 13.533898 C 1.8457623,10.498001 4.3438747,8 7.3796606,8 z"
+       id="rect3311"
+       style="fill-rule:evenodd;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 9.5932203,12.427118 H 38.369491 c 2.213559,0 3.320339,1.10678 3.320339,3.320339 v 15.494916 c 0,2.21356 -1.10678,3.320338 -3.320339,3.320338 H 9.5932203 c -2.2135597,0 -3.3203394,-1.106779 -3.3203394,-3.320339 V 15.747457 c 0,-2.213559 1.1067797,-3.320339 3.3203394,-3.320339 z"
+       id="path4768"
+       style="fill:#ffffff;fill-rule:evenodd" />
+    <path
+       d="m 30.010806,30.010405 c -0.05689,-0.02295 -0.08609,-0.191708 -0.08609,-0.497353 0,-0.267977 -0.03479,-0.497387 -0.08265,-0.545264 -0.05884,-0.05884 -0.484433,-0.08265 -1.47743,-0.08265 -2.498495,0 -2.425112,0.0411 -5.225619,-2.927205 -0.679057,-0.719747 -1.393273,-1.467228 -1.587143,-1.661064 -0.590007,-0.589912 -0.526723,-0.581583 -4.260937,-0.560858 -2.785657,0.01546 -3.234541,0.03203 -3.282018,0.121223 -0.03027,0.05682 -0.132679,0.28161 -0.227612,0.499529 -0.233511,0.536011 -0.761215,1.078254 -1.330601,1.367259 -0.445,0.225871 -0.488188,0.233911 -1.256502,0.233911 -0.747054,0 -0.820713,-0.01262 -1.205628,-0.206626 C 7.8315855,24.664155 7.838362,21.614645 10,20.603086 c 0.848821,-0.397212 1.939083,-0.331361 2.717793,0.16415 0.58149,0.370015 1.008097,0.924943 1.223833,1.591957 l 0.08353,0.258283 1.148322,-7.27e-4 c 1.677178,-0.0011 1.362526,0.213154 4.351196,-2.960955 2.018298,-2.143527 2.047455,-2.157846 4.460042,-2.190369 l 1.670755,-0.02253 0.09687,-0.184967 c 0.05327,-0.101734 0.198621,-0.288186 0.322987,-0.414341 0.697459,-0.707473 1.704886,-0.717928 2.395014,-0.02486 0.461881,0.463855 0.607879,1.084899 0.410167,1.744796 -0.234778,0.783627 -1.218028,1.305039 -2.009108,1.06542 -0.454688,-0.137724 -0.743585,-0.349857 -1.011857,-0.74299 l -0.226677,-0.33218 -1.526653,0 c -1.867221,0 -2.007107,0.03465 -2.619749,0.648863 -0.966141,0.968624 -3.132835,3.283125 -3.132835,3.346553 0,0.04549 2.965562,0.06285 8.764394,0.05128 l 8.764398,-0.01748 0.0203,-0.585056 c 0.01117,-0.321779 0.04767,-0.612439 0.08113,-0.645909 0.03521,-0.03522 0.67942,0.295447 1.529421,0.785063 1.722603,0.992247 1.709632,0.984401 1.709632,1.033953 0,0.03446 -1.022139,0.64355 -2.602884,1.551063 -0.345096,0.198123 -0.595972,0.302924 -0.634035,0.264862 -0.03463,-0.03465 -0.07212,-0.32626 -0.08326,-0.64804 l -0.0203,-0.585054 -6.539364,-0.01758 c -4.137367,-0.01112 -6.563802,0.0069 -6.605883,0.04894 -0.07231,0.07231 0.869981,1.108729 2.572875,2.829871 0.806303,0.814942 1.053305,1.024669 1.282184,1.088682 0.173644,0.04856 0.858018,0.07929 1.766176,0.07929 1.689896,0 1.566294,0.05149 1.566294,-0.652581 0,-0.332842 0.02549,-0.444483 0.108943,-0.476495 0.142103,-0.05453 3.014904,-0.05453 3.157003,0 0.09512,0.0365 0.108948,0.249725 0.108948,1.68008 0,1.430353 -0.01381,1.643578 -0.108948,1.680078 -0.129797,0.04981 -3.055662,0.0463 -3.179851,-0.0038 z"
+       id="path2998"
+       style="fill:#0d0d0d;stroke:#000000;stroke-width:0.97180408;stroke-opacity:1" />
+  </g>
+</svg>

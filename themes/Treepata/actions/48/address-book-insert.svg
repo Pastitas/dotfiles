@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="48"
+   height="48"
+   id="svg2">
+  <defs
+     id="defs21">
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770">
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="1"
+         type="saturate"
+         id="feColorMatrix3772" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic"
+         id="feColorMatrix3774" />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770-3">
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="1"
+         type="saturate"
+         id="feColorMatrix3772-9" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic"
+         id="feColorMatrix3774-5" />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770-4">
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="1"
+         type="saturate"
+         id="feColorMatrix3772-6" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic"
+         id="feColorMatrix3774-8" />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770-4-5">
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="1"
+         type="saturate"
+         id="feColorMatrix3772-6-0" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic"
+         id="feColorMatrix3774-8-7" />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3770-1">
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="1"
+         type="saturate"
+         id="feColorMatrix3772-3" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic"
+         id="feColorMatrix3774-4" />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3824">
+      <feColorMatrix
+         id="feColorMatrix3826"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3828"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3830" />
+      <feColorMatrix
+         id="feColorMatrix3832"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3834"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3836" />
+      <feColorMatrix
+         id="feColorMatrix3838"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3840"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>December 2008</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>office</rdf:li>
+            <rdf:li>calendar</rdf:li>
+            <rdf:li>appointmens</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Inspired by calendar icon on Nokia E71</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g3817">
+    <g
+       id="g3922-7"
+       style="stroke:#ffffff;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+      <rect
+         width="40"
+         height="36"
+         ry="5.8221002"
+         x="4"
+         y="4"
+         id="rect3241-0"
+         style="stroke:#ffffff;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         width="40"
+         height="36"
+         ry="5.8221002"
+         x="4"
+         y="4"
+         id="rect3221-5"
+         style="stroke:#ffffff;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         width="34"
+         height="30"
+         ry="2.9756999"
+         x="7"
+         y="7"
+         id="rect3223-0"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         d="m 24.004455,9.6465944 c -4.435774,0 -8.035821,3.5934466 -8.035821,8.0174526 0,2.553095 1.201929,4.82838 3.067388,6.29664 h -2.869936 c -2.657619,0 -4.789349,2.431983 -4.789349,5.452878 v 5.452878 h 25.255436 v -5.452878 c 0,-3.020895 -2.131789,-5.452878 -4.78935,-5.452878 h -2.869935 c 1.865458,-1.46826 3.067387,-3.743545 3.067387,-6.296066 0,-4.424293 -3.600047,-8.0174526 -8.03582,-8.0174526 z"
+         id="rect4337-6"
+         style="stroke:#ffffff;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g3922">
+      <rect
+         width="40"
+         height="36"
+         ry="5.8221002"
+         x="4"
+         y="4"
+         id="rect3241"
+         style="stroke:none" />
+      <rect
+         width="40"
+         height="36"
+         ry="5.8221002"
+         x="4"
+         y="4"
+         id="rect3221"
+         style="stroke:none" />
+      <rect
+         width="34"
+         height="30"
+         ry="2.9756999"
+         x="7"
+         y="7"
+         id="rect3223"
+         style="fill:#ffffff;stroke:none" />
+      <path
+         d="m 24.004455,9.6465944 c -4.435774,0 -8.035821,3.5934466 -8.035821,8.0174526 0,2.553095 1.201929,4.82838 3.067388,6.29664 h -2.869936 c -2.657619,0 -4.789349,2.431983 -4.789349,5.452878 v 5.452878 h 25.255436 v -5.452878 c 0,-3.020895 -2.131789,-5.452878 -4.78935,-5.452878 h -2.869935 c 1.865458,-1.46826 3.067387,-3.743545 3.067387,-6.296066 0,-4.424293 -3.600047,-8.0174526 -8.03582,-8.0174526 z"
+         id="rect4337"
+         style="stroke:none" />
+    </g>
+    <g
+       transform="matrix(0.41943572,0,0,0.41943572,23.492865,22.679306)"
+       id="g3026"
+       style="fill:#000000;fill-opacity:1">
+      <g
+         id="g3798"
+         style="stroke:#ffffff;stroke-width:7.15246677;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+  </g>
+  <rect
+     width="28.881355"
+     height="28.881355"
+     x="0"
+     y="19.118645"
+     id="rect3313"
+     style="fill:none" />
+  <g
+     transform="matrix(0,0.60169492,-0.60169492,0,28.964389,19.186269)"
+     id="g5500">
+    <path
+       d="m 41,26 c 0.3,0 0.588,-0.532 0,-1 L 25,9 C 24,8 24,8 23,9 L 7,25 c -0.5984,0.425 -0.2,1 0,1 h 10 v 13 c 0,0 0,1 1,1 h 12 c 1,0 1,-1 1,-1 V 26 h 10 z"
+       id="path4046"
+       style="stroke:#ffffff;stroke-width:8" />
+    <path
+       d="m 41,26 c 0.3,0 0.588,-0.532 0,-1 L 25,9 C 24,8 24,8 23,9 L 7,25 c -0.5984,0.425 -0.2,1 0,1 h 10 v 13 c 0,0 0,1 1,1 h 12 c 1,0 1,-1 1,-1 V 26 h 10 z"
+       id="path9" />
+  </g>
+</svg>
