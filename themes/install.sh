@@ -3,6 +3,7 @@ themes=$HOME/.themes
 icons=$HOME/.icons
 pixmaps=/usr/share/pixmaps
 lightDM=/etc/lightdm
+config=$home/.config
 nitrogen=$HOME/.config/nitrogen
 
 
@@ -15,6 +16,10 @@ fi
 if [ ! -d $nitrogen ]; then
     mkdir -r $nitrogen
 fi
+if [ ! -d $config ]; then
+    mkdir -r $config
+fi
+sudo su
 
 dotfiles_install_package nitrogen lightdm
 
