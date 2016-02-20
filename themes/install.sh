@@ -23,10 +23,10 @@ sudo su
 
 dotfiles_install_package nitrogen lightdm
 
-dotfiles_install_component .gtkrc-2.0 $HOME/
-dotfiles_install_component .xinitrc $HOME/
-dotfiles_install_component diehard4 $themes/
-dotfiles_install_component Treepata $icons/
-dotfiles_install_component wallpapers $pixmaps/
-dotfiles_install_component lightdm-gtk-greeter.conf $lightDM/
-dotfiles_install_component bg-saved.cfg $nitrogen/
+dotfiles_install_component .gtkrc-2.0 $HOME/.gtkrc-2.0
+dotfiles_install_component .xinitrc $HOME/.xinitrc
+dotfiles_install_component diehard4 $themes/diehard4
+dotfiles_install_component Treepata $icons/Treepata
+dotfiles_install_component wallpapers $pixmaps/wallpapers
+dotfiles_install_component lightdm-gtk-greeter.conf $lightDM/lightdm-gtk-greeter.conf
+dotfiles_install_component bg-saved.cfg $nitrogen/bg-saved.cfg
