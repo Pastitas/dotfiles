@@ -28,5 +28,5 @@ dotfiles_install_component .xinitrc $HOME/.xinitrc
 dotfiles_install_component diehard4 $themes/diehard4
 dotfiles_install_component Treepata $icons/Treepata
 dotfiles_install_component wallpapers $pixmaps/wallpapers
-dotfiles_install_component lightdm-gtk-greeter.conf $lightDM/lightdm-gtk-greeter.conf
+sudo dotfiles_install_component lightdm-gtk-greeter.conf $lightDM/lightdm-gtk-greeter.conf
 dotfiles_install_component bg-saved.cfg $nitrogen/bg-saved.cfg
