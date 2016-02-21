@@ -19,7 +19,7 @@ fi
 if [ ! -d $config ]; then
     mkdir -r $config
 fi
-sudo mkdir $pixmaps/wallpapers
+sudo ln ${DOTFILES_CURRENT_SOURCE_DIR}/themes/wallpapers $pixmaps/wallpapers
 
 
 dotfiles_install_package nitrogen lightdm
@@ -32,5 +32,5 @@ dotfiles_install_component wallpapers/CyberParis.jpg $pixmaps/wallpapers/CyberPa
 dotfiles_install_component wallpapers/cyberEye.jpg $pixmaps/wallpapers/cyberEye.jpg 
 dotfiles_install_component wallpapers/greenNinja.png $pixmaps/wallpapers/greenNinja.png
 dotfiles_install_component wallpapers/tiger.png $pixmaps/wallpapers/tiger.png
-sudo dotfiles_install_component lightdm-gtk-greeter.conf $lightDM/lightdm-gtk-greeter.conf
+dotfiles_install_component lightdm-gtk-greeter.conf $lightDM/lightdm-gtk-greeter.conf
 dotfiles_install_component bg-saved.cfg $nitrogen/bg-saved.cfg
