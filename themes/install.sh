@@ -19,7 +19,7 @@ fi
 if [ ! -d $config ]; then
     mkdir -r $config
 fi
-sudo su
+
 
 dotfiles_install_package nitrogen lightdm
 
