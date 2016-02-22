@@ -9,3 +9,7 @@ dmenu arch dmenu-manjaro
 zsh cygwin zsh
 vim cygwin vim
 cmake cygwin cmake
+rofi arch rofi-git
+i3-gaps arch i3-gaps
+nitrogen arch nitrogen
+lightdm arch lightdm
