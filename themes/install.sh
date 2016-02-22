@@ -5,7 +5,9 @@ pixmaps=/usr/share/pixmaps
 lightDM=/etc/lightdm
 config=$home/.config
 nitrogen=$HOME/.config/nitrogen
-wallpapers="${DOTFILES_CURRENT_SOURCE_DIR}/themes/wallpapers"
+wallpapers=$themes/wallpapers
+
+
 
 if [ ! -d $themes ]; then
     mkdir $themes
@@ -19,8 +21,8 @@ fi
 if [ ! -d $config ]; then
     mkdir -r $config
 fi
-sudo mv -r $wallpapers $pixmaps/wallpapers
-
+sudo cp -r $wallpapers $pixmaps/
+sudo cp  $themes/lightdm-gtk-greeter.conf $lightdm/
 
 dotfiles_install_package nitrogen lightdm
 
