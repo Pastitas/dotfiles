@@ -23,7 +23,7 @@ if [ ! -d $config ]; then
     mkdir -r $config
 fi
 sudo cp -r $wallpapers $pixmaps/
-sudo cp  $HOME/.dotfiles/themes/lightdm-gtk-greeter.conf $lightdm/
+sudo cp $HOME/.dotfiles/themes/lightdm-gtk-greeter.conf $lightdm/
 
 dotfiles_install_package nitrogen lightdm
 
