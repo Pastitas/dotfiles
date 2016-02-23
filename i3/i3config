@@ -152,6 +152,7 @@ bindsym $mod+Ctrl+Left workspace prev
 # assign [class="Pcmanfm"] 3
 for_window [ class="Spotify" ] move to workspace $workspace8
 assign [ class="Firefox" ] $workspace1 
+assign [ class="TeamViewer.exe"] $workspace4
 assign [ class="VirtualBox" ] $workspace4
 assign [ class="URxvt" ] $workspace2
 assign [ class="Pcmanfm" ] $workspace3
@@ -182,7 +183,6 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="Virtualbox"] floating enable border normal
-
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 

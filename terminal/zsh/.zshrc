@@ -5,7 +5,8 @@
  export DOTFILES=$HOME/.dotfiles
  export ZSH=$HOME/.oh-my-zsh
  export ZSH_FISH_COMPLETIONS=${DOTFILES}/terminal/zsh/fish-completions
-# Look in ~/.oh-my-zsh/themes/
+ export VISUAL="vim"
+ # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bira"
