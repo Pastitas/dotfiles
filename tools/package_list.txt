@@ -17,3 +17,5 @@ wireshark-common
 wireshark-gtk
 zsh
 zsh-completions
+netbeans
+teamviewer
