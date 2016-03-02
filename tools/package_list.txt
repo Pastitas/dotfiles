@@ -4,7 +4,6 @@ firefox
 xflux
 gnu-netcat
 macchanger
-netbeans
 nodejs-how2
 openocd
 openssh
