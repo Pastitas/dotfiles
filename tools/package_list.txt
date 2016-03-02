@@ -12,7 +12,6 @@ putty
 radare2
 rofi-git
 spotify
-teamviewer
 vim
 wine
 wireshark-common
