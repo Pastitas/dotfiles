@@ -10,7 +10,7 @@ rm current_list.txt
 
 for x in $(cat diff_list.txt)
 do 
-   sudo pacman -Sd $x 
+   sudo pacman -S $x 
     if [ $? -ne 0 ] 
     then yaourt $x 
     fi 
