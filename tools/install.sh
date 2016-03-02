@@ -10,7 +10,10 @@ rm current_list.txt
 
 for x in $(cat diff_list.txt)
 do 
-    dotfiles_install_package $x 
+   sudo pacman -S $x 
+    if [ $? -ne 0 ] 
+    then yaourt $x 
+    fi 
 done
 
 rm diff_list.txt
