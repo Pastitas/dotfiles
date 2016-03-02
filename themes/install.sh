@@ -4,7 +4,7 @@ themes=$HOME/.themes
 icons=$HOME/.icons
 pixmaps=/usr/share/pixmaps
 lightDM=/etc/lightdm
-config=$home/.config
+config=$HOME/.config
 nitrogen=$HOME/.config/nitrogen
 wallpapers=$HOME/.dotfiles/themes/wallpapers
 dotThemes=$HOME/.dotfiles/themes
@@ -23,7 +23,7 @@ if [ ! -d $config ]; then
     mkdir $config
 fi
 
-sudo mv -r $wallpapers $pixmaps/
+sudo mv  $wallpapers $pixmaps/
 sudo mv -f $dotThemes/lightdm-gtk-greeter.conf $lightdm/
 
 
