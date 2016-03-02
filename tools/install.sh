@@ -10,7 +10,7 @@ rm current_list.txt
 
 for x in $(cat diff_list.txt)
 do 
-    dotfiles_install_package -S $x 
+    dotfiles_install_package $x 
 done
 
 rm diff_list.txt
