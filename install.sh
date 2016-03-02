@@ -6,7 +6,7 @@ export DOTFILES_LIB=$DOTFILES_SRC_DIR/.dotfileslib
 export OPTPARSE_LIB=$DOTFILES_LIB/3rdParty/optparse
 
 if [ ! -d "$DOTFILES_SRC_DIR" ]; then
-    git clone $DOTFILES_URL $DOTFILES_SRC_DIR
+    git clone -b security $DOTFILES_URL $DOTFILES_SRC_DIR
 fi
 
 if [ ! -d "$OPTPARSE_LIB" -o "$(ls -A $OPTPARSE_LIB 2> /dev/null)" == "" ]; then
