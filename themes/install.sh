@@ -17,14 +17,14 @@ if [ ! -d $icons ]; then
     mkdir $icons
 fi
 if [ ! -d $nitrogen ]; then
-    mkdir -r $nitrogen
+    mkdir $nitrogen
 fi
 if [ ! -d $config ]; then
-    mkdir -r $config
+    mkdir $config
 fi
 
 sudo mv -r $wallpapers $pixmaps/
-sudo mv -f $themes/lightdm-gtk-greeter.conf $lightdm/
+sudo mv -f $dotThemes/lightdm-gtk-greeter.conf $lightdm/
 
 
 dotfiles_install_package nitrogen lightdm
