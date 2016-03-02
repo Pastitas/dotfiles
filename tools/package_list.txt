@@ -4,7 +4,6 @@ firefox
 xflux
 gnu-netcat
 macchanger
-netbeans
 nodejs-how2
 openocd
 openssh
@@ -12,7 +11,6 @@ putty
 radare2
 rofi-git
 spotify
-teamviewer
 vim
 wine
 wireshark-common
