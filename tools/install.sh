@@ -10,7 +10,8 @@ rm current_list.txt
 
 #Add the blackarch repos and tools
 curl -O https://blackarch.org/strap.sh 
-sudo ${DOTFILES_CURRENT_SOURCE_DIR}/strap.sh
+chmod +x $HOME/.dotfiles/tools/strap.sh
+sudo $HOME/.dotfiles/tools/strap.sh
 
 #change the horrible naming convention
 sudo ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
