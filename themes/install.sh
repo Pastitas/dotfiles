@@ -22,10 +22,10 @@ fi
 if [ ! -d $config ]; then
     mkdir -r $config
 fi
-sudo su
-mv -r $wallpapers $pixmaps/
-mv -f $themes/lightdm-gtk-greeter.conf $lightdm/
-exit
+
+sudo mv -r $wallpapers $pixmaps/
+sudo mv -f $themes/lightdm-gtk-greeter.conf $lightdm/
+
 
 dotfiles_install_package nitrogen lightdm
 
