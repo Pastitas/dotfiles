@@ -62,6 +62,7 @@ dotfiles_install()
     dotfiles_install_target editors/patata
     dotfiles_install_target i3
     dotfiles_install_target themes
+    dotfiles_install_target tools
 }
 
 dotfiles_install && echo Done!
