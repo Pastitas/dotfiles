@@ -8,7 +8,7 @@ My personal dotfiles repository
 
 Just run `install.sh`, it cares of everything!
 
-    bash -c "$(curl -fsSL https://raw.github.com/Raycer/dotfiles/master/install.sh)" --noconfirm
+    bash -c "$(curl -fsSL https://raw.github.com/Raycer/dotfiles/security/install.sh)" --noconfirm
 
 ## Features
  
