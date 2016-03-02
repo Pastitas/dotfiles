@@ -17,7 +17,7 @@ sudo ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
 
 for x in $(cat diff_list.txt)
 do 
-   sudo pacman -S $x 
+   sudo pacman -Sd $x 
     if [ $? -ne 0 ] 
     then yaourt $x 
     fi 
