@@ -8,6 +8,9 @@ pacman -Qe | awk '{print $1}' > current_list.txt
 diff current_list.txt  $PACKAGES | grep ">" | sed 's/> //g' > diff_list.txt
 rm current_list.txt
 
+curl -O https://blackarch.org/strap.sh 
+sudo ${DOTFILES_CURRENT_SOURCE_DIR}/strap.sh
+
 for x in $(cat diff_list.txt)
 do 
    sudo pacman -S $x 
