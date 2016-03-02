@@ -5,12 +5,11 @@
 
 pacman -Qe | awk '{print $1}' > current_list.txt
 diff current_list.txt package_list.txt | grep ">" | sed 's/> //g' > diff_list.txt
+rm diff_list.txt current_list.txt
 
 for x in $(cat diff_list.txt)
 do 
-    sudo pacman -S $x 
-    if [ $? -ne 0 ] 
-    then yaourt $x 
-    fi
+    dotfiles_install_package -S $x 
 done
+
 
