@@ -1,9 +1,7 @@
-aircrack-ng
 cmake
 firefox
 xflux
 gnu-netcat
-macchanger
 nodejs-how2
 openocd
 openssh
@@ -12,10 +10,11 @@ radare2
 rofi-git
 spotify
 vim
+virtualbox
 wine
-wireshark-common
-wireshark-gtk
 zsh
 zsh-completions
 netbeans
 teamviewer
+eclipse
+
