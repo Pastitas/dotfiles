@@ -173,7 +173,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tomasr/molokai'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -188,7 +187,10 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " NERDtree related config
-let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_no_startup_for_diff = 1
+let g:NERDTreeWinSize = 20
+
 
 " Syntax highlighting
 syntax on
