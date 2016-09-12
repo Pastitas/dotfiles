@@ -27,6 +27,9 @@ font pango:System San Francisco Display 9
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
+#launch morc menu
+bindsym $mod+z exec --no-startup-id morc-menu
+
 # start a terminal
 bindsym $mod+Return exec terminal
 
@@ -35,7 +38,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec rofi -show run -lines 5 -eh 4 -width 100 -padding 220 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 14"
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
 
 
 # Screen brightness controls
@@ -44,6 +47,7 @@ bindsym $mod+d exec rofi -show run -lines 5 -eh 4 -width 100 -padding 220 -opaci
 
 # Start Applications
 # bindsym $mod+F1 exec thunderbird
+bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec gksu pcmanfm
@@ -57,6 +61,9 @@ bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notif
 bindsym $mod+Shift+Print exec notify-send 'selection will be saved to ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Shift+h exec qpdfview i3_help.pdf
 bindsym $mod+Ctrl+x exec xkill
+byndsym $mod+Shift+minus move scratchpad
+byndsym $mod+minus scratchpad show
+
 
 # focus_follows_mouse no
 
