@@ -38,7 +38,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -color-window "argb:e42f343f, argb:0000000, argb:0000000" -color-normal "argb:02f343f, #fcfcfc, argb:0eee8d5, argb:4d586e75, #eee8d5" -color-active "argb:0fdf6e3, #ffffff, argb:0eee8d5, argb:0268bd2, #fdf6e3" -color-urgent "argb:0fdf6e3, #ffffff, argb:0eee8d5, argb:0dc322f, #fdf6e3" -font "System San Francisco Display 18"
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 333 -color-window "argb:e42f343f, argb:0000000, argb:0000000" -color-normal "argb:02f343f, #fcfcfc, argb:0eee8d5, argb:4d586e75, #eee8d5" -color-active "argb:0fdf6e3, #ffffff, argb:0eee8d5, argb:0268bd2, #fdf6e3" -color-urgent "argb:0fdf6e3, #ffffff, argb:0eee8d5, argb:0dc322f, #fdf6e3" -font "System San Francisco Display 18"
 
 
 # Screen brightness controls
