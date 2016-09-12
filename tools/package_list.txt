@@ -2,10 +2,8 @@ cmake
 firefox
 xflux
 gnu-netcat
-nodejs-how2
 openocd
 openssh
-putty
 radare2
 rofi-git
 spotify
@@ -14,7 +12,5 @@ virtualbox
 wine
 zsh
 zsh-completions
-netbeans
-teamviewer
-eclipse
+
 
