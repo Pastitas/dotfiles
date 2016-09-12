@@ -1,5 +1,5 @@
 !#include </home/blackrain/.xcolors/themes/neon>
-URxvt.font: 9x15
+URxvt.font: "System San Francisco Display" 10
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
