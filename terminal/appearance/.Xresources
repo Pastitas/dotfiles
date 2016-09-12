@@ -197,4 +197,19 @@ URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 *color14 			: #0A9B81
 ! white
 *color7  			: #EBEBEB
-*color15 	
+*color15 
+
+
+! ------------------------------------------------------------------------------
+! ! ROFI Color theme
+! ! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #2f343f, argb:0002b36, argb:0000000
+rofi.color-normal: argb:0fdf6e3, #ffffff, argb:0eee8d5, argb:0586e75, #eee8d5
+rofi.color-active: argb:0fdf6e3, #ffffff, argb:0eee8d5, argb:0268bd2, #fdf6e3
+rofi.color-urgent: argb:0ffffff, #ffffff, argb:0eee8d5, argb:0dc322f, #fdf6e3
+rofi.width: 100
+rofi.padding: 333
+rofi.opacity: 85
+rofi.font: "System San Francisco Display 18"
+
