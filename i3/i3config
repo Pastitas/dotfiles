@@ -288,7 +288,8 @@ exec --no-startup-id clipit
 exec --no-startup-id compton -b -f
 exec --no-startup-id conky -c ~/.i3/conky.conf 
 exec --no-startup-id xautolock -time 10 -locker blurlock
-exec --no-startup-id xflux -l 40.41 -g -3.7
+#exec --no-startup-id xflux -l 40.41 -g -3.7
+exec --no-startup-id nightshift -d
 
 #############################
 ### settings for i3-gaps: ###
