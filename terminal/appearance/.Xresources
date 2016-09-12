@@ -1,5 +1,5 @@
 !#include </home/blackrain/.xcolors/themes/neon>
-URxvt.font: "System San Francisco Display" 10
+URxvt.font: 9x15
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
@@ -211,5 +211,5 @@ rofi.color-urgent: argb:0ffffff, #ffffff, argb:0eee8d5, argb:0dc322f, #fdf6e3
 rofi.width: 100
 rofi.padding: 333
 rofi.opacity: 85
-rofi.font: "System San Francisco Display 18"
+rofi.font: System San Francisco Display 20
 
