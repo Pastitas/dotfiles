@@ -1,14 +1,9 @@
-aircrack-ng
-blackarch
 cmake
 firefox
 xflux
 gnu-netcat
-macchanger
-nodejs-how2
 openocd
 openssh
-putty
 radare2
 rofi-git
 spotify
