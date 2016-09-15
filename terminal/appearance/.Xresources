@@ -1,4 +1,5 @@
 !#include </home/blackrain/.xcolors/themes/neon>
+Xcursor.theme: Maia-Cursor
 URxvt.font: 9x15
 Xft.dpi: 96
 Xft.antialias: true
@@ -7,7 +8,7 @@ Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
-Xcursor.theme: Chameleon-Pearl-Regular-0.5
+!Xcursor.theme: Chameleon-Pearl-Regular-0.5
 Xcursor.size:  0
 URxvt.depth: 32
 URxvt.background: [85]#000000
@@ -197,7 +198,7 @@ URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 *color14 			: #0A9B81
 ! white
 *color7  			: #EBEBEB
-*color15 
+!*color15 
 
 
 ! ------------------------------------------------------------------------------
