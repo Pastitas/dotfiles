@@ -1,5 +1,8 @@
 cmake
 firefox
+blackarch
+aircrack-ng
+macchanger
 xflux
 gnu-netcat
 openocd
