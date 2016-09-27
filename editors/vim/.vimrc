@@ -175,9 +175,11 @@ Plugin 'tomasr/molokai'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'altercation/vim-colors-solarized'
+
 Plugin 'Lokaltog/powerline'
 Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -196,60 +198,98 @@ colorscheme molokai
 " Solarized colorscheme config
 let g:solarized_termcolors=256
 
-"Highlight excess line lenght for python
+
+"=====================================================
+""" Python settings
+"=====================================================
+"
+"" omnicomplete
+set completeopt-=preview                    " remove omnicompletion dropdown
+
+" python executables for different plugins
+let g:pymode_python='python'
+let g:syntastic_python_python_exec='python'
+let g:jedi#force_py_version=2
+
+" rope
+let g:pymode_rope=0
+let g:pymode_rope_completion=0
+let g:pymode_rope_complete_on_dot=0
+let g:pymode_rope_auto_project=0
+let g:pymode_rope_enable_autoimport=0
+let g:pymode_rope_autoimport_generate=0
+let g:pymode_rope_guess_project=0
+
+" documentation
+let g:pymode_doc=0
+let g:pymode_doc_key='K'
+
+" lints
+let g:pymode_lint=0
+
+" virtualenv
+let g:pymode_virtualenv=1
+
+" breakpoints
+let g:pymode_breakpoint=1
+let g:pymode_breakpoint_key='<leader>b'
+
+" syntax highlight
+let g:pymode_syntax=1
+let g:pymode_syntax_slow_sync=1
+let g:pymode_syntax_all=1
+let g:pymode_syntax_print_as_function=g:pymode_syntax_all
+let g:pymode_syntax_highlight_async_await=g:pymode_syntax_all
+let g:pymode_syntax_highlight_equal_operator=g:pymode_syntax_all
+let g:pymode_syntax_highlight_stars_operator=g:pymode_syntax_all
+let g:pymode_syntax_highlight_self=g:pymode_syntax_all
+let g:pymode_syntax_indent_errors=g:pymode_syntax_all
+let g:pymode_syntax_string_formatting=g:pymode_syntax_all
+let g:pymode_syntax_space_errors=g:pymode_syntax_all
+let g:pymode_syntax_string_format=g:pymode_syntax_all
+let g:pymode_syntax_string_templates=g:pymode_syntax_all
+let g:pymode_syntax_doctests=g:pymode_syntax_all
+let g:pymode_syntax_builtin_objs=g:pymode_syntax_all
+let g:pymode_syntax_builtin_types=g:pymode_syntax_all
+let g:pymode_syntax_highlight_exceptions=g:pymode_syntax_all
+let g:pymode_syntax_docstrings=g:pymode_syntax_all
+
+" highlight 'long' lines (>= 80 symbols) in python files
 augroup vimrc_autocmds
-        autocmd!
-            " highlight characters past column 120
-        autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
-        autocmd FileType python match Excess /\%120v.*/
-        autocmd FileType python set nowrap
+    autocmd!
+        autocmd FileType python,rst highlight Excess ctermbg=DarkGrey guibg=Black
+        autocmd FileType python,rst match Excess /\%81v.*/
+        autocmd FileType python,rst set nowrap
         augroup END
-            
-" Powerline setup
- set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
- set laststatus=2
 
-" Python-mode
-" Activate rope
-" Keys:
-" K             Show python docs
-" <Ctrl-Space>  Rope autocomplete
-" <Ctrl-c>g     Rope goto definition
-" <Ctrl-c>d     Rope show documentation
-" <Ctrl-c>f     Rope find occurrences
-" <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
-" [[            Jump on previous class or function (normal, visual, operator
-" modes)
-" ]]            Jump on next class or function (normal, visual, operator
-" modes)
-" [M            Jump on previous class or method (normal, visual, operator
-" modes)
-" ]M            Jump on next class or method (normal, visual, operator modes)
-let g:pymode_rope = 0
+        " code folding
+        let g:pymode_folding=0
 
-" Documentation
-let g:pymode_doc = 1
-let g:pymode_doc_key = 'K'
+        " pep8 indents
+        let g:pymode_indent=1
 
-"Linting
-let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
-" Auto check on save
-let g:pymode_lint_write = 1
+                        " code running
+                        let g:pymode_run=0
 
-" Support virtualenv
-let g:pymode_virtualenv = 1
+                        " jedi-vim
+                        let g:jedi#popup_select_first=0             " Disable choose
+                        first option on autocomplete
+                        let g:jedi#show_call_signatures=0           " Show call
+                        signatures
+                        let g:jedi#popup_on_dot=1                   " Enable
+                        autocomplete on dot
 
-" Enable breakpoints plugin
-let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_bind = '<leader>b'
-
-" syntax highlighting
-let g:pymode_syntax = 1
-let g:pymode_syntax_all = 1
-let g:pymode_syntax_indent_errors = g:pymode_syntax_all
-let g:pymode_syntax_space_errors = g:pymode_syntax_all
-
-" Don't autofold code
-let g:pymode_folding = 0
+                        " syntastic
+                        let g:syntastic_always_populate_loc_list=1
+                        let g:syntastic_auto_loc_list=1
+                        let g:syntastic_enable_signs=1
+                        let g:syntastic_check_on_wq=0
+                        let g:syntastic_aggregate_errors=1
+                        let g:syntastic_loc_list_height=5
+                        let g:syntastic_error_symbol='X'
+                        let g:syntastic_style_error_symbol='X'
+                        let g:syntastic_warning_symbol='x'
+                        let g:syntastic_style_warning_symbol='x'
+                        let g:syntastic_python_checkers=['flake8', 'pydocstyle',
+                        'python']
 

@@ -40,6 +40,11 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_recency
 bindsym $mod+d exec rofi -show run
 
+# Media control keys
+#bindsym XF86AudioPrev exec mpc prev
+#bindsym XF86AudioNext exec mpc next
+#bindsym XF86AudioPlay exec mpc_toggle
+#bindsym XF86AudioMute exec <command to execute>
 
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && exec notify-send 'brightness up'
