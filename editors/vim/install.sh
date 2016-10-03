@@ -19,11 +19,3 @@ dotfiles_install_remote_component GITHUB VundleVim/Vundle.vim ".vim/bundle/Vundl
 # Install vim plugins
 vim +PluginInstall +qall
 
-# Build YouCompleteMe
-if [[ -z $(find "${BUNDLE}/YouCompleteMe/third_party/ycmd" -name "libclang.*") ]]; then
-    dotfiles_install_package cmake
-    print_info COMPONENT "Building YouCompleteMe.vim"
-    python2 $BUNDLE/YouCompleteMe/install.py --clang-completer
-else
-    print_info COMPONENT "YouCompleteMe.vim already built"
-fi
