@@ -12,5 +12,3 @@ virtualbox
 wine
 zsh
 zsh-completions
-
-
