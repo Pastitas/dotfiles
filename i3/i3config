@@ -1,5 +1,3 @@
-
-# i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -53,7 +51,7 @@ bindsym $mod+d exec rofi -show run
 # Start Applications
 # bindsym $mod+F1 exec thunderbird
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec firefox
+bindsym $mod+F2 exec firefox -P
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F4 exec spotify
