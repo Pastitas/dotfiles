@@ -54,6 +54,7 @@ bindsym $mod+d exec rofi -show run
 # bindsym $mod+F1 exec thunderbird
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox
+bindsym $mod+Ctrl+F2 exec firefox -p
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F4 exec spotify
