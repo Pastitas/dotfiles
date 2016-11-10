@@ -11,3 +11,8 @@ vim
 wine
 zsh
 zsh-completions
+i3
+i3status
+dmenu
+rofi
+i3-gaps
