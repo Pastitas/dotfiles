@@ -11,8 +11,12 @@ vim
 wine
 zsh
 zsh-completions
-i3
-i3status
+i3status-manjaro
 dmenu
 rofi
 i3-gaps
+i3lock
+i3-scrot
+i3exit
+i3-help
+i3-scripts
