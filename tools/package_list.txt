@@ -6,6 +6,7 @@ gnu-netcat
 openocd
 openssh
 rofi-git
+nitrogen
 spotify
 vim
 wine
