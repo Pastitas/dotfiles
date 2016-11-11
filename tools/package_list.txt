@@ -21,3 +21,4 @@ i3-scrot
 i3exit
 i3-help
 i3-scripts
+compton
