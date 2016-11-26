@@ -44,7 +44,7 @@ bindsym $mod+d exec rofi -show run
 #bindsym XF86AudioPrev exec mpc prev
 #bindsym XF86AudioNext exec mpc next
 #bindsym XF86AudioPlay exec mpc_toggle
-#bindsym XF86AudioMute exec <command to execute>
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && exec notify-send 'brightness up'
