@@ -6,7 +6,7 @@ My personal dotfiles repository
 
 ## Install
 
-Just run `install.sh`, it cares of everything!
+Just run `install.sh`, it takes care of everything!
 
     bash -c "$(curl -fsSL https://raw.github.com/Pastitas/dotfiles/master/install.sh)" --noconfirm
 
