@@ -59,7 +59,7 @@ dotfiles_install()
     dotfiles_install_target terminal/zsh
     dotfiles_install_target terminal/appearance
    # dotfiles_install_target editors/vim
-    dotfiles_install_target editors/patata
+   # dotfiles_install_target editors/patata
     dotfiles_install_target i3
     dotfiles_install_target themes
     dotfiles_install_target tools
