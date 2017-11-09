@@ -27,7 +27,7 @@ sudo cp -r  $wallpapers $pixmaps/
 sudo cp  $dotThemes/lightdm-gtk-greeter.conf $lightdm/
 
 
-dotfiles_install_package nitrogen lightdm
+dotfiles_install_package nitrogen lightdm numix-circle
 
 dotfiles_install_component .gtkrc-2.0 $HOME/.gtkrc-2.0
 dotfiles_install_component .xinitrc $HOME/.xinitrc
