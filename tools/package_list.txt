@@ -7,13 +7,13 @@ openocd
 openssh
 nitrogen
 spotify
-nvim
+neovim
 wine
 zsh
 zsh-completions
 i3status-manjaro
-dmenu
-rofi-git
+ranger
+rofi
 i3-gaps
 i3lock
 i3-scrot
@@ -21,4 +21,4 @@ i3exit
 i3-help
 i3-scripts
 compton
-telegram-bin
+telegram
