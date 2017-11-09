@@ -99,3 +99,4 @@ alias fixit='sudo rm -f /var/lib/pacman/db.lck'
 alias update='yaourt -Syua'
 alias con='nano $HOME/.i3/config'
 alias shutdown='sudo shutdown 0'
+alias vim="nvim"
