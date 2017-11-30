@@ -22,3 +22,5 @@ i3-help
 i3-scripts
 compton
 telegram
+gnome
+gnome-tweak-tool
