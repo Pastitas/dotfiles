@@ -100,3 +100,5 @@ alias update='yaourt -Syua'
 alias con='nano $HOME/.i3/config'
 alias shutdown='sudo shutdown 0'
 alias vim="nvim"
+alias mouse="sudo rmmod psmouse; sudo modprobe psmouse;"
+alias bluetooth="sudo systemctl start bluetooth"
