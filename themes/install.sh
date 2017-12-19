@@ -16,9 +16,8 @@ fi
 sudo cp -r  $wallpapers/ $backgrounds
 sudo cp -r $dotThemes/lightdm-gtk-greeter.conf $lightdm/
 
-
 dotfiles_install_package nitrogen lightdm 
-yaourt numix-circle 
+yaourt numix-circle-icon-theme 
 yaourt arc-gtk
 
 dotfiles_install_component .gtkrc-2.0 $HOME/.gtkrc-2.0
