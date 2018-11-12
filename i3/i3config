@@ -1,5 +1,4 @@
 
-# i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -31,8 +30,7 @@ floating_modifier $mod
 bindsym $mod+z exec --no-startup-id morc-menu
 
 # start a terminal
-bindsym $mod+Return exec terminal
-
+bindsym $mod+Return exec terminator 
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -43,19 +41,19 @@ bindsym $mod+d exec rofi -show run
 # Media control keys
 #bindsym XF86AudioPrev exec mpc prev
 #bindsym XF86AudioNext exec mpc next
-#bindsym XF86AudioPlay exec mpc_toggle
+bindsym XF86AudioPlay exec mpc_toggle
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && exec notify-send 'brightness up'
-# bindsym XF86MonBrightnessDown exec xbacklight -dec 10 && exec notify-send 'brightness down'
+ bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && exec notify-send 'brightness up'
+ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 && exec notify-send 'brightness down'
 
 # Start Applications
 # bindsym $mod+F1 exec thunderbird
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec firefox
-bindsym $mod+Shift+F2 exec firefox -P
-bindsym $mod+F3 exec pcmanfm
+bindsym $mod+F2 exec firejail firefox
+bindsym $mod+Shift+F2 exec firejail firefox -P new
+bindsym $mod+F3 exec terminator -e 'ranger'
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F4 exec spotify
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -64,8 +62,6 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Shift+d exec killall dunst && exec notify-send 'restart dunst'
 bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to ~/Screenshots'
 bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to ~/Screenshots'
-bindsym $mod+Shift+Print exec notify-send 'selection will be saved to ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
-bindsym $mod+Shift+h exec qpdfview i3_help.pdf
 bindsym $mod+Ctrl+x exec xkill
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
@@ -74,10 +70,10 @@ bindsym $mod+minus scratchpad show
 # focus_follows_mouse no
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindcode $mod+47 focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -86,10 +82,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindcode $mod+Shift+47 move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -103,7 +99,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split in horizontal orientation
-bindsym $mod+h split v;exec notify-send 'tile horizontally'
+bindsym $mod+Shift+v split v;exec notify-send 'tile horizontally'
 
 # split in vertical orientation
 bindsym $mod+v split h;exec notify-send 'tile vertically'
@@ -134,7 +130,7 @@ set $workspace3 "3 "
 set $workspace4 "4 "
 set $workspace5 "5 "
 set $workspace6 "6 "
-set $workspace7 "7 "
+set $workspace7 "7 "
 set $workspace8 "8 "
 
 # move focused container to workspace
@@ -157,9 +153,14 @@ bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 
+# move workspace to display
+
+bindsym $mod+Ctrl+l move workspace to output right
+bindsym $mod+Ctrl+h move workspace to output left
+bindsym $mod+Ctrl+j move workspace to output down
+bindsym $mod+Ctrl+k move workspace to output right
+
 #navigate workspaces next / previous
-bindsym $mod+Ctrl+Right workspace next
-bindsym $mod+Ctrl+Left workspace prev
 
 # assign [class="Pale moon"] 2
 # assign [class="Pcmanfm"] 3
@@ -168,10 +169,11 @@ for_window [ class="Spotify" ] move to workspace $workspace8
 assign [ class="Firefox" ] $workspace1
 assign [ class="TeamViewer.exe"] $workspace4
 assign [ class="VirtualBox" ] $workspace4
-assign [ class="URxvt" ] $workspace2
+assign [ class="Terminator" ] $workspace2
 assign [ class="Pcmanfm" ] $workspace3
+assign [ title="firejail /usr/bin/ranger "] $workspace3
 assign [ class="Xarchiver" ] $workspace3
-assign [ class="Steam" ] $workspace7
+assign [ class="Rambox" ] $workspace7
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 2
@@ -214,13 +216,25 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+    bindsym l exec --no-startup-id $HOME/.i3/i3exit lock, mode "default"
+    bindsym s exec --no-startup-id $HOME/.i3/i3exit suspend, mode "default"
+    bindsym u exec --no-startup-id $HOME/.i3/i3exit switch_user, mode "default"
+    bindsym e exec --no-startup-id $HOME/.i3/i3exit logout, mode "default"
+    bindsym h exec --no-startup-id $HOME/.i3/i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id $HOME/.i3/i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id $HOME/.i3/i3exit shutdown, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+x mode "$layout"
+set $layout (l)aptop, (w)orkstation, (m)irror
+mode "$layout" {
+    bindsym w exec --no-startup-id $HOME/.i3/workstation, mode "default"
+    bindsym l exec --no-startup-id $HOME/.i3/laptop, mode "default"
+    bindsym m exec --no-startup-id $HOME/.i3/mirror, mode "default"
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
@@ -235,9 +249,9 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
         bindsym odiaeresis resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
@@ -251,22 +265,38 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+## colors from Xresources
+#
+#
+#set_from_resource $fg i3wm.color7 #f0f0f0
+#set_from_resource $bg i3wm.color2 #f0f0f0
+#
+## class                 border  backgr. text indicator child_border
+#client.focused          $bg     $bg     $fg  $bg       $bg
+#client.focused_inactive $bg     $bg     $fg  $bg       $bg
+#client.unfocused        $bg     $bg     $fg  $bg       $bg
+#client.urgent           $bg     $bg     $fg  $bg       $bg
+#client.placeholder      $bg     $bg     $fg  $bg       $bg
+#
+#client.background       $bg
+
+
 # Theme colors
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
+set $bg-color 	         #20201d
+set $inactive-bg-color   #20201d
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
 # Theme colors
-client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
+client.focused #ff9900 #ff9900 #000000 #FFFFFF
 client.unfocused #222222 #222222 #2ECC71 #222222
 client.urgent #274D01 #900000 #FFFFFF #900000
 
 
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id i3lock-fancy -gp -- scrot -z 
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
@@ -286,18 +316,24 @@ bar {
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
+#exec --no-startup-id pavucontrol
+exec --no-startup-id pasystray 
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
+exec --no-startup-id xclip
+exec --no-startup-id export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id compton -b -f
+exec --no-startup-id compton 
 exec --no-startup-id conky -c ~/.i3/conky.conf 
 exec --no-startup-id xautolock -time 10 -locker blurlock
-exec --no-startup-id caffeine
+exec --no-startup-id caffeine-indicator
 exec --no-startup-id xflux -l 40.41 -g -3.7
-#exec --no-startup-id nightshift -d
+exec --no-startup-id rambox
+exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
+exec --no-startup-id export LESS="-JMQRiFX"
+
+
 
 #############################
 ### settings for i3-gaps: ###
@@ -307,9 +343,9 @@ exec --no-startup-id xflux -l 40.41 -g -3.7
 for_window [class="^.*"] border pixel 2
 
 # Set inner/outer gaps
-gaps inner 0
-gaps outer 0
+# gaps inner 0
+# ºgaps outer 0
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+# smart_borders on

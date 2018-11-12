@@ -11,6 +11,17 @@
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bira"
 
+## Import colorscheme from 'wal' asynchronously
+## &   # Run the process in the background.
+## ( ) # Hide shell job control messages.
+#(cat ~/.cache/wal/sequences &)
+#
+## Alternative (blocks terminal for 0-3ms)
+#cat ~/.cache/wal/sequences
+#
+## To add support for TTYs this line can be optionally added.
+#source ~/.cache/wal/colors-tty.sh
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -57,7 +68,7 @@ plugins=(git fish-completion)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source ${ZSH_FISH_COMPLETIONS}/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -83,6 +94,7 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+export LESS="-JMQRiFX"
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -104,3 +116,7 @@ alias mouse='sudo rmmod psmouse; sudo modprobe psmouse;'
 alias bluetooth='sudo systemctl start bluetooth'
 alias bluez='blueman-applet'
 alias bluez-dev='blueman-manager'
+alias aptinstall='sudo apt-get install'
+alias aptsearch='apt-cache search'
+#alias ranger='termite ranger'
+
