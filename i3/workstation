@@ -1,0 +1,23 @@
+#!/bin/bash
+
+workspace1="1 "
+workspace2="2 "
+workspace3="3 "
+workspace4="4 "
+workspace5="5 "
+workspace6="6 "
+workspace7="7 "
+workspace8="8 "
+
+xrandr --output HDMI-2 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output eDP-1 --mode 1920x1080 --pos 1920x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
+
+i3-msg "workspace $workspace1, move workspace to output HDMI-1" 
+i3-msg "workspace $workspace2, move workspace to output HDMI-1" 
+i3-msg "workspace $workspace3, move workspace to output HDMI-1"
+i3-msg "workspace $workspace4, move workspace to output HDMI-1"
+i3-msg "workspace $workspace5, move workspace to output eDP-1"
+i3-msg "workspace $workspace6, move workspace to output eDP-1"
+i3-msg "workspace $workspace7, move workspace to output eDP-1"
+i3-msg "workspace $workspace8, move workspace to output eDP-1"
+
+nitrogen --restore
