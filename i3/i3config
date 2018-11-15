@@ -48,6 +48,11 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
  bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && exec notify-send 'brightness up'
  bindsym XF86MonBrightnessDown exec xbacklight -dec 10 && exec notify-send 'brightness down'
 
+# Volume control keys
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 3%- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
 # Start Applications
 # bindsym $mod+F1 exec thunderbird
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
@@ -55,6 +60,7 @@ bindsym $mod+F2 exec firejail firefox
 bindsym $mod+Shift+F2 exec firejail firefox -P new
 bindsym $mod+F3 exec terminator -e 'ranger'
 bindsym $mod+Shift+F3 exec gksu pcmanfm
+bindsym $mod+Shift+N exec terminator -e 'vim /home/abolullo/Documents/simplenote'
 bindsym $mod+F4 exec spotify
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b

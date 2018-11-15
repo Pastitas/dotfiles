@@ -6,6 +6,7 @@
  export ZSH=$HOME/.oh-my-zsh
  export ZSH_FISH_COMPLETIONS=${DOTFILES}/terminal/zsh/fish-completions
  export VISUAL="vim"
+ export editor='nvim'
  # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
@@ -64,7 +65,11 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fish-completion)
+plugins=(
+    git
+	gitfast
+	git-flow
+    fish-completion)
 
 # User configuration
 
@@ -118,5 +123,8 @@ alias bluez='blueman-applet'
 alias bluez-dev='blueman-manager'
 alias aptinstall='sudo apt-get install'
 alias aptsearch='apt-cache search'
-#alias ranger='termite ranger'
-
+alias report='python3 /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/create_security_report.py -s /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/'
+alias simplenote='vim ~/Documents/simplenote'
+alias gs='git status'
+alias emacs='emacs -c'
+# alias gl='git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done && git fetch --all && git pull --all'

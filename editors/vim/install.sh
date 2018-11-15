@@ -1,21 +1,15 @@
 #!/bin/bash
 
-DOTVIM="${DOTFILES_CURRENT_SOURCE_DIR}/.vim"
-BUNDLE="${DOTVIM}/bundle"
+DOTVIM="${DOTFILES_CURRENT_SOURCE_DIR}/.config/nvim"
 
 # Create .vim folder if needed
 [ -d "$DOTVIM" ] && mkdir -p $DOTVIM
 
-# Install vim with python support
-dotfiles_install_package vim
+# Install nvim
+dotfiles_install_package nvim
 
 # Install config
-dotfiles_install_component .vim $HOME/.vim
-dotfiles_install_component .vimrc $HOME/.vimrc
-
-# Install vim vundle
-dotfiles_install_remote_component GITHUB VundleVim/Vundle.vim ".vim/bundle/Vundle.vim"
+dotfiles_install_component init.vim $HOME/.config/nvim/init.vim
 
 # Install vim plugins
-vim +PluginInstall +qall
-
+nvim +PlugInstall
