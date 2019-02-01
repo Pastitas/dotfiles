@@ -10,8 +10,10 @@ workspace6="6 "
 workspace7="7 "
 workspace8="8 "
 
-xrandr --fb 1920x1080 --output eDP-1 --mode 1920x1080 --scale-from 1920x1080 --output HDMI-1 --mode 1920x1080 --scale 1x1 --same-as eDP-1
-
+#xrandr --fb 1920x1080 --output eDP-1 --mode 1920x1080 --scale-from 1920x1080 --output HDMI-1 --mode 1920x1080 --scale 1x1 --same-as eDP-1
+#xrandr --output eDP-1 --rate 60 --mode 1920x1080 --fb 1920x1080 --output HDMI-1 --mode 1920x1080i --same-as eDP-1 --output DP-1 --off
+#mons -d
+ xrandr --output eDP-1 --rate 60 --mode 1920x1080 --fb 1920x1080 --output HDMI-1 --mode 1920x1080 --same-as eDP-1 --output DP-1 --off 
 
 i3-msg "workspace $workspace1, move workspace to output primary"
 i3-msg "workspace $workspace2, move workspace to output primary"

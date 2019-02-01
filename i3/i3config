@@ -2,7 +2,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
-set $mod Mod4
+set $mod Mod1
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -51,7 +51,6 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 # Volume control keys
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q sset Master 3%- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Start Applications
 # bindsym $mod+F1 exec thunderbird
@@ -60,7 +59,7 @@ bindsym $mod+F2 exec firejail firefox
 bindsym $mod+Shift+F2 exec firejail firefox -P new
 bindsym $mod+F3 exec terminator -e 'ranger'
 bindsym $mod+Shift+F3 exec gksu pcmanfm
-bindsym $mod+Shift+N exec terminator -e 'vim /home/abolullo/Documents/simplenote'
+bindsym $mod+Shift+N exec terminator -e 'nvim /home/abolullo/Documents/simplenote'
 bindsym $mod+F4 exec spotify
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
@@ -100,7 +99,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # workspace back and forth (with/without active container)
-workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth no
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
@@ -236,8 +235,9 @@ mode "$mode_system" {
 }
 
 bindsym $mod+x mode "$layout"
-set $layout (l)aptop, (w)orkstation, (m)irror
+set $layout (a)uto, (l)aptop, (w)orkstation, (m)irror
 mode "$layout" {
+    bindsym a exec --no-startup-id autorandr --change
     bindsym w exec --no-startup-id $HOME/.i3/workstation, mode "default"
     bindsym l exec --no-startup-id $HOME/.i3/laptop, mode "default"
     bindsym m exec --no-startup-id $HOME/.i3/mirror, mode "default"
@@ -256,14 +256,14 @@ mode "resize" {
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym odiaeresis resize grow width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym j resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Up resize grow height 10 px or 10 ppt
+        bindsym Down resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
         # exit resize mode: Enter or Escape
@@ -318,15 +318,18 @@ bar {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
 }
-#tostart applications
+#startup applications 
+#exec --no-startup-id xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 1920x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
+exec --no-startup-id mons -e left
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
 #exec --no-startup-id volumeicon
-#exec --no-startup-id pavucontrol
+#exec --no-startup-id pavucontrol
 exec --no-startup-id pasystray 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xclip
+exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb

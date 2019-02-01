@@ -6,12 +6,19 @@
  export ZSH=$HOME/.oh-my-zsh
  export ZSH_FISH_COMPLETIONS=${DOTFILES}/terminal/zsh/fish-completions
  export VISUAL="vim"
- export editor='nvim'
+ export EDITOR='nvim'
+ export RANGER_LOAD_DEFAULT_RC='FALSE'
+ export KEYTIMEOUT=1
+ export ADOCPDFBASE="/home/abolullo/Documents/seguridad/plantillas/.asciidoc"
+
+# Prefer vi shortcuts
+bindkey -v
+DEFAULT_VI_MODE=viins
+KEYTIMEOUT=1
  # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bira"
-
 ## Import colorscheme from 'wal' asynchronously
 ## &   # Run the process in the background.
 ## ( ) # Hide shell job control messages.
@@ -22,6 +29,41 @@ ZSH_THEME="bira"
 #
 ## To add support for TTYs this line can be optionally added.
 #source ~/.cache/wal/colors-tty.sh
+
+# Bash insulter
+if [ -f /etc/bash.command-not-found ]; then
+    . /etc/bash.command-not-found
+fi
+. /home/abolullo/Repos/z/z.sh
+
+
+setxkbmap -option caps:escape
+ # Include z support
+# source home/abolullo/Repos/z/z.sh
+# unalias z 
+
+# z() {
+#   if [[ -z "$*" ]]; thesww
+#     cd "$(z -l 2>&1 | fzf +s --tac | sed 's/^[0-9,.]* //')"
+#   else
+#     last_z_args="$@"
+#     z "$@"
+#   fi
+# }
+# 
+# zz() {
+#   cd "$(z -l 2>&1 | sed 's/^[0-9,.] //' | fzf -q "$_last_z_args")"
+# }
+# 
+#alias j=z
+#alias jj=zz
+
+
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+# To apply the command to CTRL-T as well
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -60,17 +102,30 @@ ZSH_THEME="bira"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
+#source /usr/share/zplug/init.zsh
+#
+#zplug plugins/git, from:oh-my-zsh
+#zplug plugins/gitfast, from:oh-my-zsh
+#zplug plugins/git-flow, from:oh-my-zsh
+#zplug plugins/fish-completion, from:oh-my-zsh
+#zplug zsh-users/zsh-syntax-highlighting
+#zplug zsh-users/zsh-autosuggestions
+#
+##zplug update
+#zplug load
+#zplug clear
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-	gitfast
-	git-flow
-    fish-completion)
-
+ plugins=(
+     git
+     vi-mode
+     gitfast
+     git-flow
+     fish-completion
+   )
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
@@ -83,11 +138,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='vim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -95,15 +150,20 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Startup programs
+#xmodmap $HOME/.Xmodmap
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 export LESS="-JMQRiFX"
 #
+#
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias gl='git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done && git fetch --all && git pull --all'
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
@@ -124,7 +184,11 @@ alias bluez-dev='blueman-manager'
 alias aptinstall='sudo apt-get install'
 alias aptsearch='apt-cache search'
 alias report='python3 /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/create_security_report.py -s /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/'
-alias simplenote='vim ~/Documents/simplenote'
+alias simplenote='nvim ~/Documents/simplenote'
 alias gs='git status'
-alias emacs='emacs -c'
-# alias gl='git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done && git fetch --all && git pull --all'
+alias fd='fdfinf'
+alias zaproxy='/home/abolullo/Repos/zaproxy/zap.sh'
+alias scrumtasks='cat /home/abolullo/Documents/seguridad/scrum/tasks.adoc | grep -i -A45 '
+alias seguridad='cd /home/abolullo/Documents/seguridad'
+alias grbp='for remote in $(git branch -r); do git branch --track ${remote#origin/} $remote; done && git fetch --all && git pull --all'
+alias adoc-pdf='asciidoctor -B "$ADOCPDFBASE" -r asciidoctor-pdf -a pdf-style="$ADOCPDFBASE/themes/custom-theme.yml" -a pdf-fontsdir="$ADOCPDFBASE/fonts/" -b pdf'
