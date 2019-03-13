@@ -1,6 +1,6 @@
 " Plug plugins
 call plug#begin()
-Plug 'roxma/nvim-completion-manager'
+" Plug 'roxma/nvim-completion-manager'
 Plug 'SirVer/ultisnips'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
@@ -12,7 +12,12 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-fugitive'
 Plug 'reewr/vim-monokai-phoenix'
 Plug 'vim-scripts/restore_view.vim'
+Plug 'scrooloose/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+" let g:airline_powerline_fonts=1
 
 " Mundo Undo tree
 noremap <F5> :MundoToggle<CR>
@@ -20,10 +25,23 @@ noremap <F5> :MundoToggle<CR>
 " Colorscheme and adjustments
 colorscheme monokai-phoenix
 hi Normal guibg=NONE ctermbg=NONE
+let g:airline_theme='serene'
 
 "keep view
 set viewoptions=cursor,folds,slash,unix
 " let g:skipview_files = ['*\.vim']
+
+" Use asciidoctor for checking syntax
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_asciidoc_asciidoc_exec = 'asciidoctor'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 
 syntax on
 set tabstop=4

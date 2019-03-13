@@ -192,3 +192,4 @@ alias scrumtasks='cat /home/abolullo/Documents/seguridad/scrum/tasks.adoc | grep
 alias seguridad='cd /home/abolullo/Documents/seguridad'
 alias grbp='for remote in $(git branch -r); do git branch --track ${remote#origin/} $remote; done && git fetch --all && git pull --all'
 alias adoc-pdf='asciidoctor -B "$ADOCPDFBASE" -r asciidoctor-pdf -a pdf-style="$ADOCPDFBASE/themes/custom-theme.yml" -a pdf-fontsdir="$ADOCPDFBASE/fonts/" -b pdf'
+alias showpass="pass show -c1" 
