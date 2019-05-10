@@ -15,12 +15,16 @@ Plug 'vim-scripts/restore_view.vim'
 Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'mikewootc/vim-gtd'
 call plug#end()
 
 " let g:airline_powerline_fonts=1
 
 " Mundo Undo tree
 noremap <F5> :MundoToggle<CR>
+
+" GTD plugin
+let g:gtd#dir = '~/notes'
 
 " Colorscheme and adjustments
 colorscheme monokai-phoenix
@@ -86,6 +90,30 @@ set expandtab
 
 "git diff in vertical
 set diffopt+=vertical
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = " " " Leader is the space key
+let g:mapleader = " "
+"auto indent for brackets
+inoremap {<CR> {<CR>}<Esc>O
+" easier write
+nmap <leader>w :w!<cr>
+" easier quit
+nmap <leader>q :q<cr>
+" silence search highlighting
+nnoremap <leader>sh :nohlsearch<Bar>:echo<CR>
+"paste from outside buffer
+nnoremap <leader>p :set paste<CR>"+p:set nopaste<CR>
+vnoremap <leader>p <Esc>:set paste<CR>gv"+p:set nopaste<CR>
+"Commit current file
+nnoremap <leader>g :Gcommit % -m "
+"Push to upstream
+nnoremap <leader>p :Gpush --set-upstream origin $(git_current_branch)<CR>
+"copy to outside buffer
+vnoremap <leader>y "+y
+"select all
+nnoremap <leader>a ggVG
 
 highlight clear SpellBad
 highlight SpellBad term=standout ctermfg=1 ctermbg=none term=underline cterm=underline
