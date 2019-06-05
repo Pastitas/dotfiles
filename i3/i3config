@@ -2,7 +2,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
-set $mod Mod1
+set $mod Mod4
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -343,7 +343,8 @@ exec --no-startup-id rambox
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id export LESS="-JMQRiFX"
 
-
+##Startup layout
+exec --no-startup-id $HOME/.i3/workstation
 
 #############################
 ### settings for i3-gaps: ###
