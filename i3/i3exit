@@ -8,13 +8,13 @@ lock() {
 
 case "$1" in
     lock)
-       	i3lock-fancy -gp -- scrot -z 
+       i3lock-fancy -gp -- scrot -z 
         ;;
     logout)
         i3-msg exit
         ;;
     suspend)
-        systemctl suspend
+        systemctl suspend && i3lock-fancy -gp -- scrot -z
         ;;
     hibernate)
         systemctl hibernate

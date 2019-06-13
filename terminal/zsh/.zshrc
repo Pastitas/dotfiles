@@ -37,8 +37,8 @@ fi
 . /home/abolullo/Repos/z/z.sh
 
 
-setxkbmap -option caps:escape
- # Include z support
+# setxkbmap -option caps:escape
+# Include z support
 # source home/abolullo/Repos/z/z.sh
 # unalias z 
 
@@ -127,7 +127,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
    )
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/snap/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source ${ZSH_FISH_COMPLETIONS}/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -192,3 +192,4 @@ alias seguridad='cd /home/abolullo/Documents/seguridad'
 alias grbp='for remote in $(git branch -r); do git branch --track ${remote#origin/} $remote; done && git fetch --all && git pull --all'
 alias adoc-pdf='asciidoctor -B "$ADOCPDFBASE" -r asciidoctor-pdf -a pdf-style="$ADOCPDFBASE/themes/custom-theme.yml" -a pdf-fontsdir="$ADOCPDFBASE/fonts/" -b pdf'
 alias showpass="pass show -c1" 
+alias rm="trash"

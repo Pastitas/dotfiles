@@ -2,7 +2,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
-set $mod Mod4
+set $mod Mod1
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -36,7 +36,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show run dmenu
 bindsym $mod+Shift+d exec rofi-pass 
 
 # Media control keys
@@ -61,7 +61,7 @@ bindsym $mod+Shift+F2 exec firejail firefox -P new
 bindsym $mod+F3 exec terminator -e 'ranger'
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+Shift+N exec terminator -e 'nvim /home/abolullo/Documents/simplenote'
-bindsym $mod+F4 exec spotify
+þbindsym $mod+F4 exec spotify
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
@@ -169,17 +169,16 @@ bindsym $mod+Ctrl+k move workspace to output right
 #navigate workspaces next / previous
 
 # assign [class="Pale moon"] 2
-# assign [class="Pcmanfm"] 3
 for_window [ class="Spotify" ] move to workspace $workspace8
 #for_window [ class="TeamViewer.exe"] move to workspace $workspace4
 assign [ class="Firefox" ] $workspace1
-assign [ class="TeamViewer.exe"] $workspace4
+#assign [ class="TeamViewer.exe"] $workspace4
 assign [ class="VirtualBox" ] $workspace4
-assign [ class="Terminator" ] $workspace2
+#assign [ class="Terminator" ] $workspace2
 assign [ class="Pcmanfm" ] $workspace3
-assign [ title="firejail /usr/bin/ranger "] $workspace3
+#assign [ title="firejail /usr/bin/ranger "] $workspace3
 assign [ class="Xarchiver" ] $workspace3
-assign [ class="Rambox" ] $workspace7
+assign [ class="google-chrome" ] $workspace7
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 2
@@ -247,7 +246,16 @@ mode "$layout" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+bindsym $mod+Shift+x mode "$keymap"
+set $keymap (e)s, (u)s
+mode "$keymap" {
+    bindsym e exec --no-startup-id setxkbmap es, mode "default" 
+    bindsym u exec --no-startup-id setxkbmap us, mode "default"
 
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -321,7 +329,7 @@ bar {
 }
 #startup applications 
 #exec --no-startup-id xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 1920x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
-exec --no-startup-id mons -e right  
+#exec --no-startup-id mons -e right  
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
@@ -331,7 +339,7 @@ exec --no-startup-id pasystray
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xclip
 exec --no-startup-id setxkbmap -option caps:escape
-exec --no-startup-id export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id compton 
@@ -339,7 +347,7 @@ exec --no-startup-id conky -c ~/.i3/conky.conf
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id xflux -l 40.41 -g -3.7
-exec --no-startup-id rambox
+exec --no-startup-id google-chrome
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id export LESS="-JMQRiFX"
 
