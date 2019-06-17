@@ -61,7 +61,7 @@ bindsym $mod+Shift+F2 exec firejail firefox -P new
 bindsym $mod+F3 exec terminator -e 'ranger'
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+Shift+N exec terminator -e 'nvim /home/abolullo/Documents/simplenote'
-þbindsym $mod+F4 exec spotify
+bindsym $mod+F4 exec spotify
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
@@ -311,7 +311,7 @@ client.urgent #274D01 #900000 #FFFFFF #900000
 
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id i3lock-fancy -gp -- scrot -z 
+bindsym $mod+9 exec --no-startup-id i3lock-fancy 4 5
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
@@ -344,7 +344,7 @@ exec --no-startup-id setxkbmap -option caps:escape
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id compton 
 exec --no-startup-id conky -c ~/.i3/conky.conf 
-exec --no-startup-id xautolock -time 10 -locker blurlock
+#exec --no-startup-id xautolock -detectsleep -time 3 -locker "i3lock-fancy -gp" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id xflux -l 40.41 -g -3.7
 exec --no-startup-id google-chrome

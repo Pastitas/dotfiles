@@ -2,22 +2,21 @@
 
 lock() {
     #  killall compton
-    h
-    #  compton -b
+    i3lock-fancy 
 }
 
 case "$1" in
     lock)
-       i3lock-fancy -gp -- scrot -z 
+        lock
         ;;
     logout)
         i3-msg exit
         ;;
     suspend)
-        systemctl suspend && i3lock-fancy -gp -- scrot -z
+       systemctl suspend && i3lock-fancy 4 5
         ;;
     hibernate)
-        systemctl hibernate
+        lock && systemctl hibernate
         ;;
     reboot)
         systemctl reboot
@@ -25,10 +24,9 @@ case "$1" in
     shutdown)
         systemctl poweroff
         ;;
-    *)
-        echo "Usage: $0 [lock|logout|suspend|hibernate|reboot|shutdown]"
+    *)        echo "Usage: $0 [lock|logout|suspend|hibernate|reboot|shutdown]"
         exit 2
 esac
 
-exit 0
+exit0
 

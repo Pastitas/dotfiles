@@ -1,10 +1,11 @@
 #!/bin/bash
 
-mons -e right
+mons -e left
 
 # Left laptop
-# xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 1440x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 0x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
-xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 1920x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
+xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 1440x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 0x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
+# Right config
+# xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 1920x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
 
 workspace1="1 "
 workspace2="2 "
@@ -27,4 +28,5 @@ i3-msg "workspace $workspace2, move workspace to output PRIMARY"
 i3-msg "workspace $workspace8, move workspace to output SECONDARY"
 i3-msg "workspace $workspace7, move workspace to output SECONDARY"
 
+setxkbmap -option caps:escape
 nitrogen --restore 
