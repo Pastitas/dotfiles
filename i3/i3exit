@@ -2,40 +2,41 @@
 
 lock() {
     # suspend message display
-    pkill -u "$USER" -USR1 dunst;
+    pkill -u "$USER" -USR1 dunst
     # lock the screen
-    i3lock-fancy 4 5 -n;
+    i3lock-fancy -p
+    pid=$!
     # resume message display
-    pkill -u "$USER" -USR2 dunst;
+    wait $pid && pkill -u "$USER" -USR2 dunst;
 }
 
 susp() {
     # suspend message display
     pkill -u "$USER" -USR1 dunst;
     # lock the screen
-    i3lock-fancy 4 5
-    dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Suspend" boolean:true &&
+    i3lock-fancy -p
+    pid=$!
+    dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Suspend" boolean:true 
     # resume message display
-    wait $pid 
-    pkill -u "$USER" -USR2 dunst;
+    wait $pid pkill -u "$USER" -USR2 dunst;
 }
 
 hibernate() {
     # suspend message display
     pkill -u "$USER" -USR1 dunst;
     # lock the screen
-    i3lock-fancy 4 5
-    dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Hibernate" boolean:true &&
+    i3lock-fancy -p
+    pid=$!
+    dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Hibernate" boolean:true 
     # resume message display
-    wait $pid 
-    pkill -u "$USER" -USR2 dunst;
+    wait $pid && pkill -u "$USER" -USR2 dunst;
 }
 
 case "$1" in
     lock)
         lock
         ;;
-        logout)
+    logout)
         i3-msg exit
         ;;
     suspend)
