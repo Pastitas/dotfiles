@@ -108,6 +108,8 @@ nnoremap <leader>p :set paste<CR>"+p:set nopaste<CR>
 vnoremap <leader>p <Esc>:set paste<CR>gv"+p:set nopaste<CR>
 "Commit current file
 nnoremap <leader>g :Gcommit % -m "
+"Copy last commit to clipboard
+nnoremap <leader>c :! {git log --pretty=format:"\%h - \%s" -n 1 \| xsel -i -b}<CR>
 "Push to upstream
 nnoremap <leader>p :Gpush --set-upstream origin $(git_current_branch)<CR>
 "copy to outside buffer

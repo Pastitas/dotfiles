@@ -183,14 +183,17 @@ alias bluez='blueman-applet'
 alias bluez-dev='blueman-manager'
 alias aptinstall='sudo apt-get install'
 alias aptsearch='apt-cache search'
-alias report='python3 /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/create_security_report.py -s /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/'
+alias reportvulns='python3 /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/create_security_report.py -s /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/'
 alias simplenote='nvim ~/Documents/simplenote'
 alias gs='git status'
-alias fd='fdfinf'
+alias fd='fdfind'
 alias zaproxy='/home/abolullo/Repos/zaproxy/zap.sh'
 alias scrumtasks='cat /home/abolullo/Documents/seguridad/scrum/tasks.adoc | grep -i -A45 '
 alias seguridad='cd /home/abolullo/Documents/seguridad'
 alias grbp='for remote in $(git branch -r); do git branch --track ${remote#origin/} $remote; done && git fetch --all && git pull --all'
 alias adoc-pdf='asciidoctor -B "$ADOCPDFBASE" -r asciidoctor-pdf -a pdf-style="$ADOCPDFBASE/themes/custom-theme.yml" -a pdf-fontsdir="$ADOCPDFBASE/fonts/" -b pdf'
-alias showpass="pass show -c1" 
+alias showpass="pass show -c1"
+alias listamedidas="find . -regextype egrep -iregex '.*med[0-9]{4}.*' | sed 's-.*/--' | sort"
 alias rm="trash"
+alias glo='git log --pretty=format:"%h - %s" -n 10'
+alias glop='git log --pretty=format:"%h - %s" -n 1 | xsel -i -b'
