@@ -101,8 +101,8 @@ bindsym $mod+Shift+Right move right
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth no
-bindsym $mod+b workspace back_and_forth
-bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+#bindsym $mod+b workspace back_and_forth
+#bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split in horizontal orientation
 bindsym $mod+Shift+v split v;exec notify-send 'tile horizontally'
@@ -283,22 +283,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-## colors from Xresources
-#
-#
-#set_from_resource $fg i3wm.color7 #f0f0f0
-#set_from_resource $bg i3wm.color2 #f0f0f0
-#
-## class                 border  backgr. text indicator child_border
-#client.focused          $bg     $bg     $fg  $bg       $bg
-#client.focused_inactive $bg     $bg     $fg  $bg       $bg
-#client.unfocused        $bg     $bg     $fg  $bg       $bg
-#client.urgent           $bg     $bg     $fg  $bg       $bg
-#client.placeholder      $bg     $bg     $fg  $bg       $bg
-#
-#client.background       $bg
-
-
 # Theme colors
 set $bg-color 	         #20201d
 set $inactive-bg-color   #20201d
@@ -342,7 +326,7 @@ exec --no-startup-id setxkbmap -option caps:escape
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id compton 
 exec --no-startup-id conky -c ~/.i3/conky.conf 
-#exec --no-startup-id xautolock -detectsleep -time 3 -locker "i3lock-fancy -gp" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
+exec --no-startup-id xautolock -detectsleep -time 3 -locker "i3lock-fancy" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id xflux -l 40.41 -g -3.7
 exec --no-startup-id google-chrome
@@ -359,10 +343,3 @@ exec --no-startup-id $HOME/.i3/workstation
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 2
 
-# Set inner/outer gaps
-# gaps inner 0
-# ºgaps outer 0
-
-# Smart borders (draw borders around container only if it is not the only container on this workspace) 
-# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-# smart_borders on
