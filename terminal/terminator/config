@@ -1,0 +1,26 @@
+[global_config]
+  focus = system
+  window_state = maximise
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
+[keybindings]
+  copy = <Primary><Shift>c
+  paste = <Primary><Shift>v
+[profiles]
+  [[default]]
+    icon_bell = False
+    background_darkness = 0.94
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
