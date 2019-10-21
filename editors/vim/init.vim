@@ -125,3 +125,13 @@ highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 highlight clear SpellCap
 highlight SpellCap ctermfg=none ctermbg=none
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l

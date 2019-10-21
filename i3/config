@@ -58,8 +58,8 @@ bindsym XF86AudioLowerVolume exec amixer -q sset Master 3%- unmute
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firejail firefox -P Casual
 bindsym $mod+Shift+F2 exec firejail firefox -P new
-bindsym $mod+F3 exec nautilus
-bindsym $mod+Shift+F3 exec gksu pcmanfm
+bindsym $mod+F3 exec spacefm
+bindsym $mod+Shift+F3 exec gksu spacefm
 bindsym $mod+Shift+N exec terminator -e 'nvim /home/abolullo/Documents/simplenote'
 bindsym $mod+F4 exec spotify
 bindsym $mod+t exec --no-startup-id pkill compton

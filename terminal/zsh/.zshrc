@@ -35,30 +35,12 @@ ZSH_THEME="bira"
 if [ -f /etc/bash.command-not-found ]; then
     . /etc/bash.command-not-found
 fi
-. /home/abolullo/Repos/z/z.sh
-
 
 # setxkbmap -option caps:escape
+
 # Include z support
-# source home/abolullo/Repos/z/z.sh
-# unalias z 
 
-# z() {
-#   if [[ -z "$*" ]]; thesww
-#     cd "$(z -l 2>&1 | fzf +s --tac | sed 's/^[0-9,.]* //')"
-#   else
-#     last_z_args="$@"
-#     z "$@"
-#   fi
-# }
-# 
-# zz() {
-#   cd "$(z -l 2>&1 | sed 's/^[0-9,.] //' | fzf -q "$_last_z_args")"
-# }
-# 
-#alias j=z
-#alias jj=zz
-
+zstyle ':completion:*' menu select
 
 # Setting fd as the default source for fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
@@ -125,6 +107,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
      vi-mode
      gitfast
      git-flow
+     zsh-z
    )
 # User configuration
 
