@@ -39,6 +39,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show run dmenu
 bindsym $mod+Shift+d exec rofi-pass 
 
+#Swap caps lock 
+exec --no-startup-id xmodmap -e "clear lock"
+exec --no-startup-id xmodmap -e "keysym Caps_Lock = Escape"
+
 # Media control keys
 #bindsym XF86AudioPrev exec mpc prev
 #bindsym XF86AudioNext exec mpc next
@@ -101,9 +105,12 @@ bindsym $mod+Shift+Right move right
 
 # mod + tab for tabbed containers
 
-bindsym $mod+Tab exec i3-switch-tabs right
-bindsym $mod+Shift+Tab exec i3-switch-tabs left
-    #wrapping tabs
+#bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show combi
+#bindsym $mod+Tab exec i3-switch-tabs right
+#bindsym $mod+Shift+Tab exec i3-switch-tabs left
+
+#wrapping tabs
 force_focus_wrapping yes
 
 # workspace back and forth (with/without active container)

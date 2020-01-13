@@ -16,6 +16,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mikewootc/vim-gtd'
+Plug 'wikitopian/hardmode'
 call plug#end()
 
 " let g:airline_powerline_fonts=1
