@@ -60,8 +60,8 @@ bindsym XF86AudioLowerVolume exec amixer -q sset Master 3%- unmute
 # Start Applications
 # bindsym $mod+F1 exec thunderbird
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec firejail firefox -P Casual
-bindsym $mod+Shift+F2 exec firejail firefox -P new
+bindsym $mod+F2 exec firefox -P Casual
+bindsym $mod+Shift+F2 exec firefox -P new
 bindsym $mod+F3 exec spacefm
 bindsym $mod+Shift+F3 exec gksu spacefm
 bindsym $mod+Shift+N exec terminator -e 'nvim /home/abolullo/Documents/simplenote'
@@ -185,14 +185,13 @@ bindsym $mod+Ctrl+k move workspace to output right
 # assign [class="Pale moon"] 2
 for_window [ class="Spotify" ] move to workspace $workspace8
 #for_window [ class="TeamViewer.exe"] move to workspace $workspace4
-assign [ class="Firefox" ] $workspace1
+assign [ class="firefox" ] $workspace1
 #assign [ class="TeamViewer.exe"] $workspace4
 assign [ class="VirtualBox" ] $workspace4
 #assign [ class="Terminator" ] $workspace2
 assign [ class="Pcmanfm" ] $workspace3
-#assign [ title="firejail /usr/bin/ranger "] $workspace3
 assign [ class="Xarchiver" ] $workspace3
-assign [ class="google-chrome" ] $workspace7
+assign [ class="google-chrome-stable" ] $workspace7
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 2
@@ -343,7 +342,7 @@ exec --no-startup-id conky -c ~/.config/i3/conky.conf
 exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id xflux -l 40.41 -g -3.7
-exec --no-startup-id google-chrome
+exec --no-startup-id google-chrome-stable
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id export LESS="-JMQRiFX"
 ##exec --no-startup-id dunst

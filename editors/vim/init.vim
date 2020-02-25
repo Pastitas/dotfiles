@@ -17,6 +17,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mikewootc/vim-gtd'
 Plug 'wikitopian/hardmode'
+Plug 'ambv/black'
 call plug#end()
 
 " let g:airline_powerline_fonts=1
@@ -99,7 +100,8 @@ let g:mapleader = " "
 "auto indent for brackets
 inoremap {<CR> {<CR>}<Esc>O
 " easier write
-nmap <leader>w :w!<cr>
+nmap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
 " easier quit
 nmap <leader>q :q<cr>
 " silence search highlighting
@@ -108,7 +110,7 @@ nnoremap <leader>sh :nohlsearch<Bar>:echo<CR>
 nnoremap <leader>p :set paste<CR>"+p:set nopaste<CR>
 vnoremap <leader>p <Esc>:set paste<CR>gv"+p:set nopaste<CR>
 "Commit current file
-nnoremap <leader>g :Gcommit % -m "
+nmap <C-g> :Gcommit % -m "
 "Copy last commit to clipboard
 nnoremap <leader>c :! {git log --pretty=format:"\%h - \%s" -n 1 \| xsel -i -b}<CR>
 "Push to upstream

@@ -4,7 +4,7 @@ lock() {
     # suspend message display
     pkill -u "$USER" -USR1 dunst
     # lock the screen
-    i3lock-fancy -p
+    i3lock-fancy-rapid 10 pixel
     # resume message display
     wait && pkill -u "$USER" -USR2 dunst;
 }
@@ -13,7 +13,7 @@ susp() {
     # suspend message display
     pkill -u "$USER" -USR1 dunst;
     # lock the screen
-    i3lock-fancy -p && dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Suspend" boolean:true 
+    i3lock-fancy-rapid 10 pixel && dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Suspend" boolean:true 
     # resume message display
     wait $pid pkill -u "$USER" -USR2 dunst;
 }
@@ -22,7 +22,7 @@ hibernate() {
     # suspend message display
     pkill -u "$USER" -USR1 dunst;
     # lock the screen
-    i3lock-fancy -p
+    i3lock-fancy-rapid 10 pixel
     pid=$!
     dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Hibernate" boolean:true 
     # resume message display

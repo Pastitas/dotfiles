@@ -104,7 +104,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Add wisely, as too many plugins slow down shell startup.
  plugins=(
      git
-     vi-mode
+     #vi-mode
      gitfast
      git-flow
      zsh-z
