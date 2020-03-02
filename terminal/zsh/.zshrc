@@ -169,6 +169,7 @@ alias aptsearch='apt-cache search'
 # Aliases fo the cul staaff
 
 alias simplenote='nvim ~/Documents/simplenote'
+alias simpletask='vim ~/Documents/simplenote/task'
 alias fd='fdfind'
 alias rm="trash"
 
@@ -177,6 +178,9 @@ alias glop='git log --pretty=format:"%h - %s" -n 1 | xsel -i -b'
 alias glo='git log --pretty=format:"%h - %s" -n 10'
 alias grbp='for remote in $(git branch -r); do git branch --track ${remote#origin/} $remote; done && git fetch --all && git pull --all'
 
+# Aliases for Paradigma workflow
+
+alias referencias="find /home/abolullo/Documents/seguridad/documentacion -regextype posix-extended -regex '.*[0-9]{5}.*adoc' | sed 's-.*/--' | sort -n -k '1.13,1.17'"
 alias scrumtasks='cat /home/abolullo/Documents/seguridad/scrum/tasks.adoc | grep -i -A45 '
 alias adoc2pdf='asciidoctor -a lang=es -r asciidoctor-pdf -b pdf -a pdf-stylesdir="$ADOCPDFBASE"/themes -a pdf-style=custom -a pdf-fontsdir="$ADOCPDFBASE"/fonts '
 alias listamedidas="find . -regextype egrep -iregex '.*med[0-9]{4}.*' | sed 's-.*/--' | sort"

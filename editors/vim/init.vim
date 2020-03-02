@@ -1,10 +1,10 @@
 " Plug plugins
 call plug#begin()
 " Plug 'roxma/nvim-completion-manager'
-Plug 'SirVer/ultisnips'
+"  !qqqlug 'SirVer/ultisnips'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'mjakl/vim-asciidoc'
 Plug 'vim-scripts/vim-auto-save'
@@ -114,7 +114,7 @@ nmap <C-g> :Gcommit % -m "
 "Copy last commit to clipboard
 nnoremap <leader>c :! {git log --pretty=format:"\%h - \%s" -n 1 \| xsel -i -b}<CR>
 "Push to upstream
-nnoremap <leader>p :Gpush --set-upstream origin $(git_current_branch)<CR>
+nnoremap <leader>p :Gpush <CR>
 "copy to outside buffer
 vnoremap <leader>y "+y
 "select all
@@ -129,10 +129,11 @@ highlight SpellLocal term=underline cterm=underline
 highlight clear SpellCap
 highlight SpellCap ctermfg=none ctermbg=none
 
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+" Hard mode
+"   noremap <Up> <NOP>
+"   noremap <Down> <NOP>
+"   noremap <Left> <NOP>
+"   noremap <Right> <NOP>
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
