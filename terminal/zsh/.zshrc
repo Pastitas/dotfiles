@@ -154,7 +154,7 @@ alias grep='grep --color=tty -d skip'
 alias cp="cp -i"			#confirm before overwriting
 alias df='df -h'				#human-readable sizes
 alias free='free -m'			#show sizes in MB
-alias np='nano PKGBUILD'
+alias np='vim PKGBUILD'
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
 alias update='yaourt -Syua'
 alias shutdown='sudo shutdown 0'
@@ -163,15 +163,13 @@ alias mouse='sudo rmmod psmouse; sudo modprobe psmouse;'
 alias bluetooth='sudo systemctl start bluetooth'
 alias bluez='blueman-applet'
 alias bluez-dev='blueman-manager'
-alias aptinstall='sudo apt-get install'
-alias aptsearch='apt-cache search'
 
 # Aliases fo the cul staaff
 
 alias simplenote='nvim ~/Documents/simplenote'
 alias simpletask='vim ~/Documents/simplenote/task'
+
 alias fd='fdfind'
-alias rm="trash"
 
 alias gs='git status'
 alias glop='git log --pretty=format:"%h - %s" -n 1 | xsel -i -b'
