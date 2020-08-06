@@ -5,8 +5,8 @@ setxkbmap -option caps:escape
 #Set name of the theme to load.
  export DOTFILES=$HOME/.dotfiles
  export ZSH=$HOME/.oh-my-zsh
- export ZSH_FISH_COMPLETIONS=${DOTFILES}/terminal/zsh/fish-completions
- export VISUAL="vim"
+ export ZSH_FISH_COMPLETIONS=$ZSH/fish-completions
+ export VISUAL="gnvim"
  export EDITOR='nvim'
  export RANGER_LOAD_DEFAULT_RC='FALSE'
  export KEYTIMEOUT=1
