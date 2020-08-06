@@ -1,4 +1,0 @@
-.vim/bundle/Vundle.vim
-
-# Ignore plugins managed by Vundle.vim
-.vim/bundle/

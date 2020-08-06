@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/abolullo/Documents'
+let g:netrw_dirhist_2='/home/abolullo'
+let g:netrw_dirhist_3='/home/abolullo/.config'
+let g:netrw_dirhist_4='/home/abolullo/.config/nvim'
+let g:netrw_dirhist_5='/home/abolullo/Documents/simplenote'
+let g:netrw_dirhist_6='/home'
+let g:netrw_dirhist_7='/home/abolullo/Documents'
+let g:netrw_dirhist_8='/home/abolullo/Documents/simplenote'
