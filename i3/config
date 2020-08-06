@@ -1,5 +1,5 @@
 
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# Please see http://i3wm.orgdocs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -133,7 +133,7 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+e layout toggle tabbed split
 
 # toggle tiling / floating
-bindsym $mod+ floating toggle
+bindsym $mod+w floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+Shift+w focus mode_toggle
