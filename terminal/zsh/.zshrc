@@ -166,6 +166,7 @@ alias bluez-dev='blueman-manager'
 
 # Aliases fo the cul staaff
 
+alias rmvimswap='rm ~/.local/share/nvim/swap/'
 alias simplenote='nvim ~/Documents/simplenote'
 alias simpletask='vim ~/Documents/simplenote/task'
 

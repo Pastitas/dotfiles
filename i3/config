@@ -2,7 +2,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
-set $mod Mod1
+set $mod Mod4
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -44,8 +44,8 @@ exec --no-startup-id xmodmap -e "clear lock"
 exec --no-startup-id xmodmap -e "keysym Caps_Lock = Escape"
 
 # Media control keys
-#bindsym XF86AudioPrev exec mpc prev
-#bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPlay exec mpc_toggle
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
@@ -133,10 +133,10 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+e layout toggle tabbed split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+ floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+w focus mode_toggle
 
 # toggle sticky
 bindsym $mod+Shift+s sticky toggle
@@ -192,6 +192,7 @@ assign [ class="VirtualBox" ] $workspace4
 assign [ class="Pcmanfm" ] $workspace3
 assign [ class="Xarchiver" ] $workspace3
 assign [ class="google-chrome-stable" ] $workspace7
+assign [ class="rambox"] $workspace7
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 2
@@ -328,24 +329,23 @@ bar {
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
-#exec --no-startup-id volumeicon
-#exec --no-startup-id pavucontrol
 exec --no-startup-id pasystray 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xclip
-exec --no-startup-id setxkbmap -option caps:escape
-
+#exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id compton 
+exec_always --no-startup-id picom -bc #compton new name
 exec --no-startup-id conky -c ~/.config/i3/conky.conf 
 exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id xflux -l 40.41 -g -3.7
-exec --no-startup-id google-chrome-stable
+exec --no-startup-id rambox
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id export LESS="-JMQRiFX"
 ##exec --no-startup-id dunst
+
+
 ##Startup layout
 exec --no-startup-id $HOME/.config/i3/workstation
 
@@ -356,3 +356,23 @@ exec --no-startup-id $HOME/.config/i3/workstation
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 2
 
+  ### kill plasma
+  ###for_window [title="Desktop — Plasma"] kill; floating enable; border none
+  ##
+  ### Plasma compatibility improvements
+  ##
+  ##for_window [window_role="pop-up"] floating enable
+  ##for_window [window_role="task_dialog"] floating enable
+  ##for_window [class="yakuake"] floating enable
+  ##for_window [class="systemsettings"] floating enable
+  ##for_window [class="plasmashell"] floating enable;
+  ##for_window [class="Plasma"] floating enable; border none
+  ##for_window [title="plasma-desktop"] floating enable; border none
+  ##for_window [title="win7"] floating enable; border none
+  ##for_window [class="krunner"] floating enable; border none
+  ##for_window [class="Kmix"] floating enable; border none
+  ##for_window [class="Klipper"] floating enable; border none
+  ##for_window [class="Plasmoidviewer"] floating enable; border none
+  ##for_window [class="(?i)*nextcloud*"] floating disable
+  ##for_window [class="plasmashell" window_type="notification"] border none, move right 700px, move down 450px
+  ##no_focus [class="plasmashell" window_type="notification"]

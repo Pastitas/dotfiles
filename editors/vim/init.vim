@@ -47,6 +47,7 @@ if !exists('g:vscode')
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
     
+    let g:vim_asciidoc_initial_foldlevel=1
     
     syntax on
     set tabstop=4
@@ -139,3 +140,4 @@ if !exists('g:vscode')
     map <C-k> <C-w>k
     map <C-l> <C-w>l
 :endif
+
