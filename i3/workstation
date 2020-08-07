@@ -1,11 +1,31 @@
-#!/bin/bash
+##!/bin/bash
 
-mons -e right 
+#case ${MONS_NUMBER} in
+#    1)
+#        mons -o
+#        nitrogen --restore
+#	;;
+#    2)
+#        mons -e top
+#	nitrogen --restore
+#        ;;
+#   3)
+#        mons -O 3
+#	sleep 10
+#	mons -S 3,2:R
+#	nitrogen --restore
+#        ;;
+#esac
+
+mons -O 3 
 
 # Left laptop
 # xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 1440x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 0x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
 # Right config
- xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 1920x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
+# xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 1920x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
+
+# Home office
+xrandr --output eDP1 --off --output DP1 --off --output DP1-1 --mode 1280x1024 --pos 1920x0 --rotate normal --output DP1-2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1-3 --off --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
 
 workspace1="1 "
 workspace2="2 "
@@ -13,20 +33,21 @@ workspace3="3 "
 workspace4="4 "
 workspace5="5 "
 workspace6="6 "
-workspace7="7 "
-workspace8="8 "
+workspace7="7 "
+workspace8="8 "
+workspace9="9 "
+workspace10="10 "
 
 PRIMARY=$( xrandr -q | awk '/ connected primary/ {print $1}' )
-SECONDARY="eDP-1"
+SECONDARY=$( xrandr -q | awk '/connected [0-9]/ {print $1}' )
 
-i3-msg "workspace $workspace3, move workspace to output PRIMARY" 
-i3-msg "workspace $workspace1, move workspace to output PRIMARY"  
-i3-msg "workspace $workspace2, move workspace to output PRIMARY"
-#i3-msg "workspace $workspace4, move workspace to output PRIMARY"
-#i3-msg "workspace $workspace5, move workspace to output SECONDARY"
-#i3-msg "workspace $workspace6, move workspace to output SECONDARY"
-i3-msg "workspace $workspace8, move workspace to output SECONDARY"
-i3-msg "workspace $workspace7, move workspace to output SECONDARY"
+#i3-msg "workspace $workspace4, move workspace to output $PRIMARY"
+#i3-msg "workspace $workspace5, move workspace to output $SECONDARY"
+#i3-msg "workspace $workspace6, move workspace to output $SECONDARY"
+i3-msg "workspace $workspace10, move workspace to output $SECONDARY"
+i3-msg "workspace $workspace9, move workspace to output $SECONDARY"
+i3-msg "workspace $workspace3, move workspace to output $PRIMARY" 
+i3-msg "workspace $workspace1, move workspace to output $PRIMARY"  
+i3-msg "workspace $workspace2, move workspace to output $PRIMARY"
 
-setxkbmap -option caps:escape
 nitrogen --restore 

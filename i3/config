@@ -150,8 +150,10 @@ set $workspace3 "3 "
 set $workspace4 "4 "
 set $workspace5 "5 "
 set $workspace6 "6 "
-set $workspace7 "7 "
-set $workspace8 "8 "
+set $workspace7 "7 "
+set $workspace8 "8 "
+set $workspace9 "9 "
+set $workspace10 "10 "
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -162,6 +164,8 @@ bindsym $mod+Shift+5 move container to workspace $workspace5
 bindsym $mod+Shift+6 move container to workspace $workspace6
 bindsym $mod+Shift+7 move container to workspace $workspace7
 bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -172,6 +176,8 @@ bindsym $mod+5 workspace $workspace5
 bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
 
 # move workspace to display
 
@@ -182,17 +188,16 @@ bindsym $mod+Ctrl+k move workspace to output right
 
 #navigate workspaces next / previous
 
-# assign [class="Pale moon"] 2
-for_window [ class="Spotify" ] move to workspace $workspace8
-#for_window [ class="TeamViewer.exe"] move to workspace $workspace4
 assign [ class="firefox" ] $workspace1
-#assign [ class="TeamViewer.exe"] $workspace4
-assign [ class="VirtualBox" ] $workspace4
 #assign [ class="Terminator" ] $workspace2
 assign [ class="Pcmanfm" ] $workspace3
 assign [ class="Xarchiver" ] $workspace3
-assign [ class="google-chrome-stable" ] $workspace7
-assign [ class="rambox"] $workspace7
+assign [ class="VirtualBox" ] $workspace4
+#for_window [ class="TeamViewer.exe"] move to workspace $workspace4
+assign [ class="google-chrome-stable" ] $workspace9
+assign [ class="rambox"] $workspace9
+for_window [ class="Spotify" ] move to workspace $workspace10
+for_window [ class="brave-browser"] move to workspace $workspace10
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 2
@@ -232,10 +237,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id $HOME/.config/i3/i3exit lock
+bindsym $mod+Escape exec --no-startup-id $HOME/.config/i3/i3exit lock
 
 # Set shut down, restart and locking features
-bindsym $mod+0 mode "$mode_system"
+bindsym $mod+Shift+Escape mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $HOME/.config/i3/i3exit lock, mode "default"
@@ -323,27 +328,24 @@ bar {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
 }
-#startup applications 
-#exec --no-startup-id xrandr --output HDMI-2 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 1920x270 --rotate normal --scale 0.75x0.75 --output DP-2 --off
-#exec --no-startup-id mons -e right  
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xclip
-#exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id blueman
-# exec_always --no-startup-id sbxkb
 exec_always --no-startup-id picom -bc #compton new name
 exec --no-startup-id conky -c ~/.config/i3/conky.conf 
-exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 exec --no-startup-id caffeine
 exec --no-startup-id xflux -l 40.41 -g -3.7
 exec --no-startup-id rambox
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id export LESS="-JMQRiFX"
-##exec --no-startup-id dunst
+exec --no-startup-id mons -a
+# exec_always --no-startup-id sbxkb
+#exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
+#exec --no-startup-id dunst
 
 
 ##Startup layout
@@ -356,23 +358,23 @@ exec --no-startup-id $HOME/.config/i3/workstation
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 2
 
-  ### kill plasma
-  ###for_window [title="Desktop — Plasma"] kill; floating enable; border none
-  ##
-  ### Plasma compatibility improvements
-  ##
-  ##for_window [window_role="pop-up"] floating enable
-  ##for_window [window_role="task_dialog"] floating enable
-  ##for_window [class="yakuake"] floating enable
-  ##for_window [class="systemsettings"] floating enable
-  ##for_window [class="plasmashell"] floating enable;
-  ##for_window [class="Plasma"] floating enable; border none
-  ##for_window [title="plasma-desktop"] floating enable; border none
-  ##for_window [title="win7"] floating enable; border none
-  ##for_window [class="krunner"] floating enable; border none
-  ##for_window [class="Kmix"] floating enable; border none
-  ##for_window [class="Klipper"] floating enable; border none
-  ##for_window [class="Plasmoidviewer"] floating enable; border none
-  ##for_window [class="(?i)*nextcloud*"] floating disable
-  ##for_window [class="plasmashell" window_type="notification"] border none, move right 700px, move down 450px
-  ##no_focus [class="plasmashell" window_type="notification"]
+## kill plasma
+##for_window [title="Desktop — Plasma"] kill; floating enable; border none
+#
+## Plasma compatibility improvements
+#
+#for_window [window_role="pop-up"] floating enable
+#for_window [window_role="task_dialog"] floating enable
+#for_window [class="yakuake"] floating enable
+#for_window [class="systemsettings"] floating enable
+#for_window [class="plasmashell"] floating enable;
+#for_window [class="Plasma"] floating enable; border none
+#for_window [title="plasma-desktop"] floating enable; border none
+#for_window [title="win7"] floating enable; border none
+#for_window [class="krunner"] floating enable; border none
+#for_window [class="Kmix"] floating enable; border none
+#for_window [class="Klipper"] floating enable; border none
+#for_window [class="Plasmoidviewer"] floating enable; border none
+#for_window [class="(?i)*nextcloud*"] floating disable
+#for_window [class="plasmashell" window_type="notification"] border none, move right 700px, move down 450px
+#no_focus [class="plasmashell" window_type="notification"]
