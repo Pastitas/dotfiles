@@ -7,9 +7,10 @@ dotfiles_install_package zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
 
 # Install fishshell completions
-dotfiles_install_remote_component GITHUB zsh-users/zsh-autosuggestions $ZSH_CUSTOM/zsh-autosuggestions
-dotfiles_install_remote_component GITHUB zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/zsh-syntax-highlighting
-dotfiles_install_remote_component GITHUB gkozak/zsh-z $ZSH_CUSTOM/zsh-z
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/zsh-syntax-highlighting
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/zsh-z
+
 
 # Install config
 dotfiles_install_component .zshrc $HOME/.zshrc
