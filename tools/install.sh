@@ -4,16 +4,16 @@
 ###################################################################################################################################
 PACKAGES="${DOTFILES_CURRENT_SOURCE_DIR}/package_list.txt"
 
-# pacman -Qe | awk '{print $1}' > current_list.txt
-# diff current_list.txt  $PACKAGES | grep ">" | sed 's/> //g' > diff_list.txt
-# rm current_list.txt
-# 
-# for x in $(cat diff_list.txt)
-# do 
-#    sudo pacman -S $x 
-#     if [ $? -ne 0 ] 
-#     then yay $x 
-#     fi 
-# done
-# 
-# rm diff_list.txt
+pacman -Qe | awk '{print $1}' > current_list.txt
+diff current_list.txt  $PACKAGES | grep ">" | sed 's/> //g' > diff_list.txt
+rm current_list.txt
+
+for x in $(cat diff_list.txt)
+do 
+   sudo pacman -S $x --noconfirm
+    if [ $? -ne 0 ] 
+    then yay $x 
+    fi 
+done
+
+rm diff_list.txt

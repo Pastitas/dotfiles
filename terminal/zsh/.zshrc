@@ -5,7 +5,6 @@ setxkbmap -option caps:escape
 #Set name of the theme to load.
  export DOTFILES=$HOME/.dotfiles
  export ZSH=$HOME/.oh-my-zsh
- export ZSH_FISH_COMPLETIONS=$ZSH/fish-completions
  export VISUAL="gnvim"
  export EDITOR='nvim'
  export RANGER_LOAD_DEFAULT_RC='FALSE'
@@ -30,13 +29,6 @@ ZSH_THEME="bira"
 #
 ## To add support for TTYs this line can be optionally added.
 #source ~/.cache/wal/colors-tty.sh
-
-# Bash insulter
-if [ -f /etc/bash.command-not-found ]; then
-    . /etc/bash.command-not-found
-fi
-
-# setxkbmap -option caps:escape
 
 # Include z support
 
@@ -85,18 +77,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-#source /usr/share/zplug/init.zsh
-#
-#zplug plugins/git, from:oh-my-zsh
-#zplug plugins/gitfast, from:oh-my-zsh
-#zplug plugins/git-flow, from:oh-my-zsh
-#zplug plugins/fish-completion, from:oh-my-zsh
-#zplug zsh-users/zsh-syntax-highlighting
-#zplug zsh-users/zsh-autosuggestions
-#
-##zplug update
-#zplug load
-#zplug clear
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -108,13 +88,13 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
      gitfast
      git-flow
      zsh-z
+     zsh-autosuggestions
    )
 # User configuration
 
 export PATH=$PATH"/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/snap/bin"
 export MANPATH="/usr/local/man:$MANPATH"
 
-source ${ZSH_FISH_COMPLETIONS}/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -156,7 +136,7 @@ alias df='df -h'				#human-readable sizes
 alias free='free -m'			#show sizes in MB
 alias np='vim PKGBUILD'
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
-alias update='yaourt -Syua'
+alias update='yay -Syua'
 alias shutdown='sudo shutdown 0'
 alias vim='nvim'
 alias mouse='sudo rmmod psmouse; sudo modprobe psmouse;'
