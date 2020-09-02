@@ -194,10 +194,10 @@ assign [ class="Pcmanfm" ] $workspace3
 assign [ class="Xarchiver" ] $workspace3
 assign [ class="VirtualBox" ] $workspace4
 #for_window [ class="TeamViewer.exe"] move to workspace $workspace4
-assign [ class="google-chrome-stable" ] $workspace9
+assign [ class="chromium" ] $workspace9
 assign [ class="rambox"] $workspace9
 for_window [ class="Spotify" ] move to workspace $workspace10
-for_window [ class="brave-browser"] move to workspace $workspace10
+assign [ class="brave-browser"] $workspace10
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 2
@@ -339,13 +339,13 @@ exec_always --no-startup-id picom -bc #compton new name
 exec --no-startup-id conky -c ~/.config/i3/conky.conf 
 exec --no-startup-id caffeine
 exec --no-startup-id xflux -l 40.41 -g -3.7
-exec --no-startup-id rambox
+exec --no-startup-id chromium
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id export LESS="-JMQRiFX"
 exec --no-startup-id mons -a
 # exec_always --no-startup-id sbxkb
 #exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
-#exec --no-startup-id dunst
+exec --no-startup-id dunst
 
 
 ##Startup layout
