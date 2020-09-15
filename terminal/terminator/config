@@ -1,11 +1,23 @@
 [global_config]
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
   focus = system
-  suppress_multiple_term_dialog = True
   window_state = maximise
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
 [keybindings]
   copy = <Primary><Shift>c
   paste = <Primary><Shift>v
+[profiles]
+  [[default]]
+    icon_bell = False
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_shape = underline
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
 [layouts]
   [[default]]
     [[[child1]]]
@@ -15,15 +27,3 @@
       parent = ""
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    background_darkness = 0.85
-    background_type = transparent
-    cursor_color = "#aaaaaa"
-    cursor_shape = underline
-    foreground_color = "#ffffff"
-    icon_bell = False
-    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    scrollback_infinite = True
-    scrollbar_position = hidden
-    show_titlebar = False

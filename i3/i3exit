@@ -1,12 +1,17 @@
 #!/usr/bin/env bash
 
 lock() {
-    # suspend message display
-    pkill -u "$USER" -USR1 dunst
-    # lock the screen
-    i3lock-fancy-rapid 10 pixel
-    # resume message display
-    wait && pkill -u "$USER" -USR2 dunst;
+    if [$XDG_SESSION_DESKTOP == "i3-gnome"]
+    then
+        dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+    else
+        # suspend message display
+        pkill -u "$USER" -USR1 dunst
+        # lock the screen
+        i3lock-fancy-rapid 10 pixel
+        # resume message display
+        wait && pkill -u "$USER" -USR2 dunst;
+    fi
 }
 
 susp() {
