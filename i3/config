@@ -105,8 +105,9 @@ bindsym $mod+Shift+Right move right
 
 # mod + tab for tabbed containers
 
+bindsym $mod+Tab exec --no-startup-id skippy-xd 
 #bindsym $mod+Tab workspace back_and_forth
-bindsym $mod+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show combi
+#bindsym $mod+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show combi
 #bindsym $mod+Tab exec i3-switch-tabs right
 #bindsym $mod+Shift+Tab exec i3-switch-tabs left
 
@@ -129,7 +130,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 
-#bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+e layout toggle tabbed split
 
 # toggle tiling / floating
@@ -145,7 +146,7 @@ bindsym $mod+Shift+s sticky toggle
 bindsym $mod+a focus parent
 
 set $workspace1 "1 "
-set $workspace2 "2 "
+set $workspace2 "2 "	
 set $workspace3 "3 "
 set $workspace4 "4 "
 set $workspace5 "5 "

@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 
+setxkbmap us -variant altgr-intl
 setxkbmap -option caps:escape
 
 #Set name of the theme to load.
