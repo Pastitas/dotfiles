@@ -1,17 +1,13 @@
 #!/usr/bin/env bash
 
 lock() {
-    if [$XDG_SESSION_DESKTOP == "i3-gnome"]
-    then
-        dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
-    else
-        # suspend message display
-        pkill -u "$USER" -USR1 dunst
-        # lock the screen
-        i3lock-fancy-rapid 10 pixel
-        # resume message display
-        wait && pkill -u "$USER" -USR2 dunst;
-    fi
+     dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+    # suspend message display
+    pkill -u "$USER" -USR1 dunst
+    # lock the screen
+    i3lock-fancy-rapid 10 pixel
+    # resume message display
+    wait && pkill -u "$USER" -USR2 dunst;
 }
 
 susp() {
@@ -29,7 +25,18 @@ hibernate() {
     # lock the screen
     i3lock-fancy-rapid 10 pixel
     pid=$!
-    dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Hibernate" boolean:true 
+    systemctl hibernate
+    # resume message display
+    wait $pid && pkill -u "$USER" -USR2 dunst;
+}
+
+windowsreboot() {
+    # suspend message display
+    pkill -u "$USER" -USR1 dunst;
+    # lock the screen
+    i3lock-fancy-rapid 10 pixel
+    pid=$!
+    systemctl hybrid-sleep
     # resume message display
     wait $pid && pkill -u "$USER" -USR2 dunst;
 }
@@ -47,6 +54,9 @@ case "$1" in
     hibernate)
         hibernate
         ;;
+    windowsreboot)
+	hybridsleep
+	;;
     reboot)
         systemctl reboot
         ;;
@@ -54,7 +64,7 @@ case "$1" in
         systemctl poweroff
         ;;
     *)
-        echo "Usage: $0 [lock|logout|suspend|hibernate|reboot|shutdown]"
+        echo "Usage: $0 [lock|logout|suspend|hibernate|windowsreboot|reboot|shutdown]"
         exit 2
 esac
 
