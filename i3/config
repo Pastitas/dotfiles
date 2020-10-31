@@ -341,7 +341,7 @@ exec --no-startup-id blueman
 exec_always --no-startup-id picom -bc #compton new name
 exec --no-startup-id conky -c ~/.config/i3/conky.conf 
 exec --no-startup-id caffeine
-exec --no-startup-id xflux -l 40.41 -g -3.7
+#exec --no-startup-id xflux -l 40.41 -g -3.7
 # exec --no-startup-id chromium
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id export LESS="-JMQRiFX"
