@@ -2,7 +2,7 @@
 
 My personal dotfiles repository
 
-![](https://raw.githubusercontent.com/Raycer/dotfiles/master/dotfiles.png)
+![](https://raw.githubusercontent.com/Pastitas/dotfiles/master/dotfiles.png)
 
 ## Install
 
