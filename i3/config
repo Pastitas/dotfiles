@@ -67,7 +67,7 @@ bindsym $mod+Shift+F3 exec gksu nautilus
 bindsym $mod+Shift+N exec terminator -e 'nvim /home/abolullo/Documents/simplenote'
 bindsym $mod+F4 exec spotify
 bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -bc
+bindsym $mod+Ctrl+t exec --no-startup-id picom -bc -i 1
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Shift+Ctrl+d exec killall dunst && exec notify-send 'restart dunst'
 bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to ~/Screenshots'
@@ -338,7 +338,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xclip
 exec --no-startup-id blueman
-exec_always --no-startup-id picom -bc #compton new name
+exec_always --no-startup-id picom -bc -i 1 #compton new name
 exec --no-startup-id conky -c ~/.config/i3/conky.conf 
 exec --no-startup-id caffeine
 #exec --no-startup-id xflux -l 40.41 -g -3.7
