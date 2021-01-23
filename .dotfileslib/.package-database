@@ -30,3 +30,4 @@ wine arch wine
 wireshark-common arch wireshark-common
 wireshark-gtk arch wireshark-gtk
 zsh-completions arch zsh-completions
+neovim arch neovim
