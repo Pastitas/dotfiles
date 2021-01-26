@@ -320,7 +320,7 @@ client.urgent #274D01 #900000 #FFFFFF #900000
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
  
-	status_command i3status -c ~/.config/i3/i3status.conf
+	status_command i3status -c ~/.config/regolith/i3/i3status.conf
 
 	colors {
 		background $bg-color
