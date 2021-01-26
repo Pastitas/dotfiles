@@ -1,12 +1,12 @@
 # Path to your oh-my-zsh installation.
 
-setxkbmap us -variant altgr-intl
-setxkbmap -option caps:escape
+setxkbmap -rules evdev -model pc105 -layout us,us -variant altgr-intl -option
+setxkbmap -rules evdev -model pc105 -layout us,us -variant altgr-intl -option "lv3:ralt_switch,caps:escape,shift:both_capslock_cancel" -symbols "pc+us(altgr-intl)+us:2+inet(evdev)+level3(ralt_switch)+capslock(escape)+shift(both_capslock_cancel)"
 
 #Set name of the theme to load.
  export DOTFILES=$HOME/.dotfiles
  export ZSH=$HOME/.oh-my-zsh
- export VISUAL="gnvim"
+ export VISUAL="nvim"
  export EDITOR='nvim'
  export RANGER_LOAD_DEFAULT_RC='FALSE'
  export KEYTIMEOUT=1
@@ -144,6 +144,9 @@ alias mouse='sudo rmmod psmouse; sudo modprobe psmouse;'
 alias bluetooth='sudo systemctl start bluetooth'
 alias bluez='blueman-applet'
 alias bluez-dev='blueman-manager'
+
+alias egpu='sudo egpu-switcher switch egpu && sudo systemctl restart gdm'
+alias internal='sudo egpu-switcher switch internal && sudo systemctl restart gdm'
 
 # Aliases fo the cul staaff
 

@@ -56,8 +56,8 @@ case "$1" in
         hibernate
         ;;
     windowsreboot)
-	windowsreboot
-	;;
+        windowsreboot
+        ;;
     reboot)
         systemctl reboot
         ;;

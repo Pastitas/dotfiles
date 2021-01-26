@@ -30,5 +30,6 @@ wine arch wine
 wireshark-common arch wireshark-common
 wireshark-gtk arch wireshark-gtk
 zsh-completions arch zsh-completions
-dmenu debian dmrnu
+dmenu debian dmenu
 rofi debian rofi
+neovim arch neovim
