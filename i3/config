@@ -331,6 +331,7 @@ bar {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
 }
+
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
@@ -341,18 +342,19 @@ exec --no-startup-id blueman
 exec_always --no-startup-id picom -bc -i 1 #compton new name
 exec --no-startup-id conky -c ~/.config/i3/conky.conf 
 exec --no-startup-id caffeine
-#exec --no-startup-id xflux -l 40.41 -g -3.7
+# exec --no-startup-id xflux -l 40.41 -g -3.7
 # exec --no-startup-id chromium
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
-exec --no-startup-id export LESS="-JMQRiFX"
 exec --no-startup-id mons -a
 # exec_always --no-startup-id sbxkb
-#exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
+# exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 exec --no-startup-id dunst
+exec --no-startup-id kdeconnect-indicator
+exec --no-startup-id syncthing-gtk -m
 
 
 ##Startup layout
-#exec --no-startup-id $HOME/.config/i3/workstation
+# exec --no-startup-id $HOME/.config/i3/workstation
 
 #############################
 ##       I3 - Gnome        ##
