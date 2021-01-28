@@ -239,20 +239,20 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Lock screen
-bindsym $mod+Escape exec --no-startup-id $HOME/.config/i3/i3exit lock
+bindsym $mod+Escape exec --no-startup-id $HOME/.config/regolith/i3/i3exit lock
 
 # Set shut down, restart and locking features
 bindsym $mod+Shift+Escape mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, reboot to (w)indows ,(h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id $HOME/.config/i3/i3exit lock, mode "default"
-    bindsym s exec --no-startup-id $HOME/.config/i3/i3exit suspend, mode "default"
-    bindsym u exec --no-startup-id $HOME/.config/i3/i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id $HOME/.config/i3/i3exit logout, mode "default"
-    bindsym w exec --no-startup-id $HOME/.config/i3/i3exit windowsreboot mode "default"
-    bindsym h exec --no-startup-id $HOME/.config/i3/i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id $HOME/.config/i3/i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id $HOME/.config/i3/i3exit shutdown, mode "default"
+    bindsym l exec --no-startup-id $HOME/.config/regolith/i3/i3exit lock, mode "default"
+    bindsym s exec --no-startup-id $HOME/.config/regolith/i3/i3exit suspend, mode "default"
+    bindsym u exec --no-startup-id $HOME/.config/regolith/i3/i3exit switch_user, mode "default"
+    bindsym e exec --no-startup-id $HOME/.config/regolith/i3/i3exit logout, mode "default"
+    bindsym w exec --no-startup-id $HOME/.config/regolith/i3/i3exit windowsreboot mode "default"
+    bindsym h exec --no-startup-id $HOME/.config/regolith/i3/i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id $HOME/.config/regolith/i3/i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id $HOME/.config/regolith/i3/i3exit shutdown, mode "default"
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
@@ -263,9 +263,9 @@ bindsym $mod+x mode "$layout"
 set $layout (a)uto, (l)aptop, (w)orkstation, (m)irror
 mode "$layout" {
     bindsym a exec --no-startup-id autorandr --change
-    bindsym w exec --no-startup-id $HOME/.config/i3/workstation, mode "default"
-    bindsym l exec --no-startup-id $HOME/.config/i3/laptop, mode "default"
-    bindsym m exec --no-startup-id $HOME/.config/i3/mirror, mode "default"
+    bindsym w exec --no-startup-id $HOME/.config/regolith/i3/workstation, mode "default"
+    bindsym l exec --no-startup-id $HOME/.config/regolith/i3/laptop, mode "default"
+    bindsym m exec --no-startup-id $HOME/.config/regolith/i3/mirror, mode "default"
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
@@ -340,21 +340,21 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xclip
 exec --no-startup-id blueman
 exec_always --no-startup-id picom -bc -i 1 #compton new name
-exec --no-startup-id conky -c ~/.config/i3/conky.conf 
+exec --no-startup-id conky -c ~/.config/regolith/i3/conky.conf 
 exec --no-startup-id caffeine
 # exec --no-startup-id xflux -l 40.41 -g -3.7
 # exec --no-startup-id chromium
 exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id mons -a
 # exec_always --no-startup-id sbxkb
-# exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
+# exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/regolith/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 exec --no-startup-id dunst
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id syncthing-gtk -m
 
 
 ##Startup layout
-# exec --no-startup-id $HOME/.config/i3/workstation
+# exec --no-startup-id $HOME/.config/regolith/i3/workstation
 
 #############################
 ##       I3 - Gnome        ##
