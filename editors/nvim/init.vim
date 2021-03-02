@@ -27,7 +27,7 @@ Plug 'mikewootc/vim-gtd'
 Plug 'wikitopian/hardmode'
 call plug#end()
 
-let g:airline_powerline_fonts=1
+let g:airline_powerlinefonts=1
 
 " Mundo Undo tree
 noremap <F5> :MundoToggle<CR>
@@ -94,8 +94,6 @@ let g:coc_global_extensions = [
   \ 'coc-eslint', 
   \ 'coc-json', 
   \ ]
-
-
 
 
 let g:auto_save = 1
