@@ -1,0 +1,4 @@
+# Logitech special thumb button
+"/usr/bin/xdotool key Super_L+Tab"
+    m:0x1c + c:23
+    Control+Alt+Mod2 + Tab
