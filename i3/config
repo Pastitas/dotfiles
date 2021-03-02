@@ -35,9 +35,10 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start program launcher
-#bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec rofi -show run dmenu
-bindsym $mod+Shift+d exec rofi-pass 
+#bindsym $mod+e exec --no-startup-id dmenu_recency
+bindsym $mod+e exec rofi -show drun 
+bindsym $mod+space exec rofi -show drun 
+bindsym $mod+Shift+space exec rofi-pass 
 
 #Swap caps lock 
 exec --no-startup-id xmodmap -e "clear lock"
@@ -66,8 +67,8 @@ bindsym $mod+F3 exec --no-startup-id nautilus
 bindsym $mod+Shift+F3 exec gksu nautilus
 bindsym $mod+Shift+N exec terminator -e 'nvim /home/abolullo/Documents/simplenote'
 bindsym $mod+F4 exec spotify
-bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -bc -i 1
+bindsym $mod+p exec --no-startup-id pkill picom
+bindsym $mod+Ctrl+p exec --no-startup-id picom -bc -i 1
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Shift+Ctrl+d exec killall dunst && exec notify-send 'restart dunst'
 bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to ~/Screenshots'
@@ -105,9 +106,9 @@ bindsym $mod+Shift+Right move right
 
 # mod + tab for tabbed containers
 
-bindsym $mod+Tab exec --no-startup-id skippy-xd 
+#bindsym $mod+Tab exec --no-startup-id skippy-xd 
 #bindsym $mod+Tab workspace back_and_forth
-#bindsym $mod+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show combi
+bindsym $mod+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show combi
 #bindsym $mod+Tab exec i3-switch-tabs right
 #bindsym $mod+Shift+Tab exec i3-switch-tabs left
 
@@ -129,9 +130,8 @@ bindsym $mod+v split h;exec notify-send 'tile vertically'
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-
 # bindsym $mod+s layout stacking
-bindsym $mod+e layout toggle tabbed split
+bindsym $mod+t layout toggle tabbed split
 
 # toggle tiling / floating
 bindsym $mod+w floating toggle
@@ -186,7 +186,6 @@ bindsym $mod+Ctrl+l move workspace to output right
 bindsym $mod+Ctrl+h move workspace to output left
 bindsym $mod+Ctrl+j move workspace to output down
 bindsym $mod+Ctrl+k move workspace to output right
-
 #navigate workspaces next / previous
 
 assign [ class="firefox" ] $workspace1

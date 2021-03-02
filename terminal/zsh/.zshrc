@@ -21,6 +21,12 @@ KEYTIMEOUT=1
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bira"
+
+## sync vim theme with shell theme using base16 
+cat >> ~/.zshrc <<'SH'
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+SH
 ## Import colorscheme from 'wal' asynchronously
 ## &   # Run the process in the background.
 ## ( ) # Hide shell job control messages.
@@ -161,10 +167,39 @@ alias glop='git log --pretty=format:"%h - %s" -n 1 | xsel -i -b'
 alias glo='git log --pretty=format:"%h - %s" -n 10'
 alias grbp='for remote in $(git branch -r); do git branch --track ${remote#origin/} $remote; done && git fetch --all && git pull --all'
 
-# Aliases for Paradigma workflow
+# Aliases for Keepler
 
-alias referencias="find /home/abolullo/Documents/seguridad/documentacion -regextype posix-extended -regex '.*[0-9]{5}.*adoc' | sed 's-.*/--' | sort -n -k '1.13,1.17'"
-alias scrumtasks='cat /home/abolullo/Documents/seguridad/scrum/tasks.adoc | grep -i -A45 '
-alias adoc2pdf='asciidoctor -a lang=es -r asciidoctor-pdf -b pdf -a pdf-stylesdir="$ADOCPDFBASE"/themes -a pdf-style=custom -a pdf-fontsdir="$ADOCPDFBASE"/fonts '
-alias listamedidas="find . -regextype egrep -iregex '.*med[0-9]{4}.*' | sed 's-.*/--' | sort"
-alias reportvulns='python3 /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/create_security_report.py -s /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/'
+alias git-clone-caf='git clone --config '\''credential.helper=!aws-vault exec --prompt zenity caf-leadmindanalytics-git -- aws codecommit credential-helper '\'' --config '\''credential.UseHttpPath=true'\'
+
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"

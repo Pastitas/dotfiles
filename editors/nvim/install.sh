@@ -6,5 +6,5 @@ if [ ! -d $dotvim ]; then
 fi
 
 dotfiles_install_package neovim vim-plug
-dotfiles_install_component init.vim $dotvim/init.vim
+dotfiles_install_component ../neovim dotvim
 
