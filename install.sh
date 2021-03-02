@@ -57,9 +57,9 @@ fi
 dotfiles_install()
 {
 #    dotfiles_install_target terminal/zsh
-    dotfiles_install_target terminal/Xresources
+#    dotfiles_install_target terminal/Xresources
 #    dotfiles_install_target terminal/git
-#    dotfiles_install_target terminal/termite
+    dotfiles_install_target terminal/termite
 #    dotfiles_install_target editors/nvim
 #    dotfiles_install_target i3
 #    dotfiles_install_target themes

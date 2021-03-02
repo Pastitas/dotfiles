@@ -65,14 +65,14 @@ bindsym $mod+F2 exec firefox
 bindsym $mod+Shift+F2 exec firefox -P new
 bindsym $mod+F3 exec --no-startup-id nautilus
 bindsym $mod+Shift+F3 exec gksu nautilus
-bindsym $mod+Shift+N exec terminator -e 'nvim /home/abolullo/Documents/simplenote'
+bindsym $mod+Shift+N exec terminator -e 'nvim $HOME/Documents/simplenote'
 bindsym $mod+F4 exec spotify
 bindsym $mod+p exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+p exec --no-startup-id picom -bc -i 1
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Shift+Ctrl+d exec killall dunst && exec notify-send 'restart dunst'
-bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to ~/Screenshots'
-bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to ~/Screenshots'
+bindsym Print exec scrot -e 'mv $f $HOME/Pictures/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to $HOME/Pictures/Screenshots'
+bindsym $mod+Print exec scrot -ue 'mv $f $HOME/Pictures/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to $HOME/Pictures/Screenshots'
 bindsym $mod+Ctrl+x exec xkill
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
@@ -321,7 +321,7 @@ client.urgent #274D01 #900000 #FFFFFF #900000
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
  
-	status_command i3status -c ~/.config/i3/i3status.conf
+	status_command i3status -c $HOME/.config/i3/i3status.conf
 
 	colors {
 		background $bg-color
@@ -341,11 +341,11 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xclip
 exec --no-startup-id blueman
 exec_always --no-startup-id picom -bc -i 1 #compton new name
-exec --no-startup-id conky -c ~/.config/i3/conky.conf 
+exec --no-startup-id conky -c $HOME/.config/i3/conky.conf 
 exec --no-startup-id caffeine
 # exec --no-startup-id xflux -l 40.41 -g -3.7
 # exec --no-startup-id chromium
-exec --no-startup-id python3 /home/abolullo/.mozilla/native-messaging-hosts/passff.py
+exec --no-startup-id python3 $HOME/.mozilla/native-messaging-hosts/passff.py
 exec --no-startup-id mons -a
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id xautolock -detectsleep -time 3 -locker "$HOME/.config/i3/i3exit lock" -notify 30  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"

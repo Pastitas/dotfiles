@@ -77,8 +77,10 @@ dotfiles_install_component()
     print_info COMPONENT "Installing component '$1' as '$2'"
 
     if [ ! -e "${component}" -a ! -L "${component}" ]; then
-      print_error COMPONENT "No file or folder named '$1' in target source directory"
-      return -1
+        if [ "$1" != "${DOTFILES_CURRENT_SOURCE_DIR}" ]; then
+            print_error COMPONENT "No file or folder named '$1' in target source directory"
+            return -1
+        fi
     fi
     
     if [ -e "${dest}" ]; then
@@ -98,8 +100,11 @@ dotfiles_install_component()
             mv $dest ${dest_backup}
         fi
     fi
-
-    ln -s $component $dest
+    if [ "$1" == "${DOTFILES_CURRENT_SOURCE_DIR}" ]; then
+        ln -s $1 $dest
+    else
+        ln -s $component $dest
+    fi
 }
 
 dotfiles_install_target()

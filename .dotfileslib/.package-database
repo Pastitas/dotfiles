@@ -33,3 +33,4 @@ zsh-completions arch zsh-completions
 dmenu debian dmenu
 rofi debian rofi
 neovim arch neovim
+termite arch termite
