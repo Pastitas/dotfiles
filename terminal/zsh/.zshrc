@@ -20,6 +20,7 @@ setxkbmap -rules evdev -model pc105 -layout us,us -variant altgr-intl -option "l
  export LESS="-JMQRiFX"
 
 
+
 #############################################################
 #                       Vim keybinds                        #
 #############################################################
