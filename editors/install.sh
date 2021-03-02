@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTNVIM="${DOTFILES_CURRENT_SOURCE_DIR}/.config/nvim"
+DOTNVIM="$HOME/.config/nvim"
 
 # Create .config/nvim folder if needed
 [ -d "$DOTNVIM" ] && mkdir -p $DOTNVIM

@@ -16,6 +16,7 @@ fi
 
 
 dotfiles_install_package nitrogen
+dotfiles_install_package lxappearance
 
 dotfiles_install_component wallpapers $wallpapers
 dotfiles_install_component .gtkrc-2.0 $HOME/.gtkrc-2.0
