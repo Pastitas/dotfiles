@@ -1,29 +1,29 @@
 [global_config]
-  focus = system
-  window_state = maximise
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
-  suppress_multiple_term_dialog = True
+  title_transmit_fg_color = "#a8a19f"
+  title_transmit_bg_color = "#1b1918"
+  title_inactive_fg_color = "#a8a19f"
+  title_inactive_bg_color = "#766e6b"
 [keybindings]
-  copy = <Primary><Shift>c
-  paste = <Primary><Shift>v
 [profiles]
   [[default]]
-    icon_bell = False
-    background_darkness = 0.85
+    background_color = "#1b1918"
+    background_darkness = 0.98
     background_type = transparent
-    cursor_shape = underline
-    cursor_color = "#aaaaaa"
-    foreground_color = "#ffffff"
+    cursor_color = "#a8a19f"
+    foreground_color = "#a8a19f"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
-    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    palette = "#1b1918:#f22c40:#5ab738:#d5911a:#407ee7:#6666ea:#00ad9c:#a8a19f:#766e6b:#f22c40:#5ab738:#d5911a:#407ee7:#6666ea:#00ad9c:#f1efee"
+    use_theme_colors = True
 [layouts]
   [[default]]
     [[[child1]]]
-      parent = window0
       type = Terminal
+      parent = window0
+      profile = default
     [[[window0]]]
-      parent = ""
       type = Window
+      parent = ""
 [plugins]
+

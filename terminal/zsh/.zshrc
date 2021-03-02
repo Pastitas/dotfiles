@@ -1,10 +1,16 @@
-# Path to your oh-my-zsh installation.
 
+#############################################################
+#                       Keyboard options                    #
+#############################################################
 setxkbmap -rules evdev -model pc105 -layout us,us -variant altgr-intl -option
 setxkbmap -rules evdev -model pc105 -layout us,us -variant altgr-intl -option "lv3:ralt_switch,caps:escape,shift:both_capslock_cancel" -symbols "pc+us(altgr-intl)+us:2+inet(evdev)+level3(ralt_switch)+capslock(escape)+shift(both_capslock_cancel)"
 
-#Set name of the theme to load.
+#############################################################
+#                       Exports                             #
+#############################################################
+ #Path to dotfiles dir
  export DOTFILES=$HOME/.dotfiles
+ #Path to oh-my-zsh dir
  export ZSH=$HOME/.oh-my-zsh
  export VISUAL="nvim"
  export EDITOR='nvim'
@@ -13,27 +19,37 @@ setxkbmap -rules evdev -model pc105 -layout us,us -variant altgr-intl -option "l
  export ADOCPDFBASE="/home/abolullo/Documents/seguridad/plantillas/.asciidoc"
  export LESS="-JMQRiFX"
 
+
+#############################################################
+#                       Vim keybinds                        #
+#############################################################
 # Prefer vi shortcuts
 bindkey -v
 DEFAULT_VI_MODE=viins
 KEYTIMEOUT=1
- # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+
+
+#############################################################
+#                       Themes                              #
+#############################################################
+## Look in ~/.oh-my-zsh/themes/
+## Optionally, if you set this to "random", it'll load a random theme each
+## time that oh-my-zsh is loaded.
 ZSH_THEME="bira"
-## Import colorscheme from 'wal' asynchronously
-## &   # Run the process in the background.
-## ( ) # Hide shell job control messages.
-#(cat ~/.cache/wal/sequences &)
-#
-## Alternative (blocks terminal for 0-3ms)
-#cat ~/.cache/wal/sequences
-#
-## To add support for TTYs this line can be optionally added.
-#source ~/.cache/wal/colors-tty.sh
 
-# Include z support
+## Base16 theming git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+
+#############################################################
+#                       Z support                           #
+#############################################################
 zstyle ':completion:*' menu select
 
 # Setting fd as the default source for fzf
@@ -42,6 +58,10 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 # To apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+
+#############################################################
+#                        OhMyZsh options                    #
+#############################################################
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -75,11 +95,15 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+
+#############################################################
+#                       Plugins                             #
+#############################################################
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -92,8 +116,12 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
      zsh-z
      zsh-autosuggestions
    )
-# User configuration
 
+
+#############################################################
+#                  path and stuff                           #
+#############################################################
+# User configuration
 export PATH=$PATH"/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/abolullo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/snap/bin"
 export MANPATH="/usr/local/man:$MANPATH"
 
@@ -118,13 +146,15 @@ source $ZSH/oh-my-zsh.sh
 # Startup programs
 #xmodmap $HOME/.Xmodmap
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
+
+#############################################################
+#                       Aliases                             #
+#############################################################
+## Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-#
-# Example aliases
+
 # alias gl='git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done && git fetch --all && git pull --all'
 alias zshrc="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
@@ -148,7 +178,7 @@ alias bluez-dev='blueman-manager'
 alias egpu='sudo egpu-switcher switch egpu && sudo systemctl restart gdm'
 alias internal='sudo egpu-switcher switch internal && sudo systemctl restart gdm'
 
-# Aliases fo the cul staaff
+## Aliases fo the cul staaff
 
 alias rmvimswap='rm ~/.local/share/nvim/swap/'
 alias simplenote='nvim ~/Documents/simplenote'
@@ -160,11 +190,3 @@ alias gs='git status'
 alias glop='git log --pretty=format:"%h - %s" -n 1 | xsel -i -b'
 alias glo='git log --pretty=format:"%h - %s" -n 10'
 alias grbp='for remote in $(git branch -r); do git branch --track ${remote#origin/} $remote; done && git fetch --all && git pull --all'
-
-# Aliases for Paradigma workflow
-
-alias referencias="find /home/abolullo/Documents/seguridad/documentacion -regextype posix-extended -regex '.*[0-9]{5}.*adoc' | sed 's-.*/--' | sort -n -k '1.13,1.17'"
-alias scrumtasks='cat /home/abolullo/Documents/seguridad/scrum/tasks.adoc | grep -i -A45 '
-alias adoc2pdf='asciidoctor -a lang=es -r asciidoctor-pdf -b pdf -a pdf-stylesdir="$ADOCPDFBASE"/themes -a pdf-style=custom -a pdf-fontsdir="$ADOCPDFBASE"/fonts '
-alias listamedidas="find . -regextype egrep -iregex '.*med[0-9]{4}.*' | sed 's-.*/--' | sort"
-alias reportvulns='python3 /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/create_security_report.py -s /home/abolullo/Documents/seguridad/plantilla_analisis_seguridad/'
