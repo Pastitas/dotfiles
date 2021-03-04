@@ -145,6 +145,67 @@ bindsym $mod+a focus parent
 #############################
 ###  Theme and colors     ###
 #############################
+set_from_resource $gray        color8  #000000
+set_from_resource $darkgray    color0  #000000
+set_from_resource $darkred     color1  #000000
+set_from_resource $red         color9  #000000
+set_from_resource $darkgreen   color2  #000000
+set_from_resource $green       color10 #000000
+set_from_resource $darkyellow  color3  #000000
+set_from_resource $yellow      color11 #000000
+set_from_resource $darkblue    color4  #000000
+set_from_resource $blue        color12 #000000
+set_from_resource $darkmagenta color5  #000000
+set_from_resource $magenta     color13 #000000
+set_from_resource $darkcyan    color6  #000000
+set_from_resource $cyan        color14 #000000
+set_from_resource $ligthgray   color7  #000000
+set_from_resource $white       color15 #000000
+
+## Custom from aletier-forest theme
+
+set $darkyellow       #D5910A
+set $darkgreen        #4ab738
+set $lightgray        #A8A19F
+set $gray             #676E7D
+set $darkgray         #1B1918
+set $black            #000000
+set $white            #FFFFFF
+set $darkred          #F22C40
+
+#                       <border>        <background>    <text>      <indicator>     <child_border>
+client.focused          $darkyellow     $darkyellow     $black      $white
+client.focused_inactive $darkgray       $darkgray       $darkgreen  $darkgray
+client.unfocused        $darkgray       $darkgray       $lightgray  $darkgray
+client.urgent           $green          $darkred        $white      $darkred
+
+# Start i3bar to display a workspace bar (plus the system information i3status if available)
+bar {
+ 
+	status_command i3status -c $HOME/.config/regolith/i3/i3status.conf
+    bindsym button2 exec $HOME/.config/regolith/i3/i3exit rofi
+    bindsym button3 exec rofi -show drun
+
+	colors {
+		background $darkgray
+	    	separator $gray
+		#                  border             background         text
+		focused_workspace  $darkgray          $darkgray          $white
+        active_workspace   $darkgray          $darkgray          $lightgray
+		inactive_workspace $darkgray          $darkgray          $gray
+		urgent_workspace   $darkyellow        $darkyellow        $white
+	}
+}
+
+
+#############################
+##       I3 - Gnome        ##
+#############################
+
+
+#############################
+###  Theme and colors     ###
+#############################
 set_from_resource $darkred     color1  #000000
 set_from_resource $red         color9  #000000
 set_from_resource $darkgreen   color2  #000000
@@ -191,10 +252,6 @@ bar {
 	}
 }
 
-
-#############################
-##       I3 - Gnome        ##
-#############################
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec_always --no-startup-id gnome-power-manager
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
