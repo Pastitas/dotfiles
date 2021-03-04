@@ -8,5 +8,3 @@ fi
 
 dotfiles_install_package i3 i3status dmenu rofi
 dotfiles_install_component $current_dir $doti3
-
-
