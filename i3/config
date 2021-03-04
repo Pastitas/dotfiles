@@ -6,7 +6,8 @@ set $editor terminator
 
 #############################
 ###  General settings     ###
-############################# set default desktop layout (default is tiling)
+#############################
+# set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
@@ -50,9 +51,9 @@ bindsym $mod+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show 
 #bindsym $mod+Tab exec i3-switch-tabs right
 #bindsym $mod+Shift+Tab exec i3-switch-tabs left
 
-#Swap caps lock 
-exec --no-startup-id xmodmap -e "clear lock"
-exec --no-startup-id xmodmap -e "keysym Caps_Lock = Escape"
+# Swap caps lock 
+#exec --no-startup-id xmodmap -e "clear lock"
+#exec --no-startup-id xmodmap -e "keysym Caps_Lock = Escape"
 
 # Media control keys
 bindsym XF86AudioPrev exec mpc prev

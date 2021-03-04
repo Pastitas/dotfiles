@@ -1,0 +1,17 @@
+morc-menu
+terminator
+dmenu_recency
+rofi-pass
+thunderbird
+bmenu
+thunar
+gksu thunar
+spotify
+nm-applet
+xfce4-power-manager
+xclip
+blueman
+conky
+caffeine
+rambox
+xflux
