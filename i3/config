@@ -2,9 +2,8 @@
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
-set $editor termite
+set $terminal termite
 set $rofi_options  -show-icons -show drun -font "inconsolata 20" -icon-theme "papirus" -theme sidebar
-
 
 
 #############################
@@ -33,11 +32,7 @@ font pango:System San Francisco Display 11
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-# launch morc menu
-bindsym $mod+z exec --no-startup-id morc-menu
 
-# start a terminal
-bindsym $mod+Return exec $editor
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -418,7 +413,13 @@ bindsym $mod+e exec rofi $rofi_options
 bindsym $mod+space exec rofi $rofi_options
 #bindsym $mod+Shift+d exec rofi-pass 
 
-bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+# launch morc menu
+bindsym $mod+z exec --no-startup-id morc_menu
+
+# start a terminal
+bindsym $mod+Return exec $terminal
+
+bindsym $mod+Ctrl+b exec $terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox
 bindsym $mod+Shift+F2 exec firefox -P new
 bindsym $mod+F3 exec --no-startup-id nautilus
