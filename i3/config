@@ -179,6 +179,8 @@ client.urgent       $green          $darkred        $white      $darkred
 bar {
  
 	status_command i3status -c $HOME/.config/regolith/i3/i3status.conf
+    bindsym button2 exec $HOME/.config/regolith/i3/i3exit rofi
+    bindsym button3 exec rofi -show drun
 
 	colors {
 		background $darkgray
