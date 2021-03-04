@@ -27,7 +27,7 @@ Plug 'mikewootc/vim-gtd'
 Plug 'wikitopian/hardmode'
 call plug#end()
 
-let g:airline_powerline_fonts=1
+let g:airline_powerlinefonts=1
 
 " Mundo Undo tree
 noremap <F5> :MundoToggle<CR>
@@ -35,7 +35,7 @@ noremap <F5> :MundoToggle<CR>
 " GTD plugin
 let g:gtd#dir = '~/notes'
 
-" Base16 Colorscheme and adjustments http://chriskempson.com/projects/base16/
+" Base16 Colorscheme and adjustments http://chriskempson.com/projects/base16-vim/
 if filereadable(expand("~/.config/nvim/colorscheme.vim"))
     let base16colorspace=256
     source ~/.config/nvim/colorscheme.vim
@@ -94,8 +94,6 @@ let g:coc_global_extensions = [
   \ 'coc-eslint', 
   \ 'coc-json', 
   \ ]
-
-
 
 
 let g:auto_save = 1
