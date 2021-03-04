@@ -1,10 +1,15 @@
+#!/bin/bash
+current_dir=${DOTFILES_CURRENT_SOURCE_DIR}
+DOTNVIM="$HOME/.config/nvim"
 
-dotvim=$HOME/.config/nvim
+# Create .config/nvim folder if needed
+[ -d "$DOTNVIM" ] && mkdir -p $DOTNVIM
 
-if [ ! -d $dotvim ]; then
-    mkdir $dotvim
-fi
+# Install nvim
+dotfiles_install_package nvim
 
-dotfiles_install_package neovim vim-plug
-dotfiles_install_component ../neovim dotvim
+# Install config
+dotfiles_install_component $current_dir $DOTNVIM
 
+# Install vim plugins
+nvim +PlugInstall
