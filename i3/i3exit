@@ -2,6 +2,7 @@
 
 lock() {
     dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+    
     # suspend message display
     pkill -u "$USER" -USR1 dunst
     # lock the screen
@@ -41,32 +42,84 @@ windowsreboot() {
     wait $pid && pkill -u "$USER" -USR2 dunst;
 }
 
+# Main function
 case "$1" in
+    rofi)
+        ;;
     lock)
         lock
+        exit 1
         ;;
     logout)
         i3-msg exit
+        exit 1
         ;;
     suspend)
         susp
+        exit 1
         ;;
     hibernate)
         hibernate
+        exit 1
         ;;
     windowsreboot)
         windowsreboot
+        exit 1
         ;;
     reboot)
         systemctl reboot
+        exit 1
         ;;
     shutdown)
         systemctl poweroff
+        exit 1
         ;;
     *)
-        echo "Usage: $0 [lock|logout|suspend|hibernate|windowsreboot|reboot|shutdown]"
+        echo "Usage: $0 [rofi|lock|logout|suspend|hibernate|windowsreboot|reboot|shutdown]"
         exit 2
 esac
 
-exit0
+# Options as characters
+# Copied from decoded unicodes (private use of "awesomefont" font)
+shutdown="  shutdown";        # "\uf011"
+reboot="  reboot";          # "\uf021"
+sleep="  sleep"            # "\uf186"
+hibernate="  hibernate"        # "\uf1da"
+windows="  windows";        # "\uf17a"
+logout="  logout";          # "\uf08b"
+lock="  lock";            # "\uf023"
+options="$shutdown\n$reboot\n$sleep\n$hibernate\n$windows\n$logout\n$lock"
 
+selected="$(echo -e "$options" | 
+            rofi -show-icons -font "inconsolata, 20" \
+                 -p "See you later, ${LOGNAME^}!" -dmenu -selected-row 6)"
+case $selected in
+
+    $shutdown)
+        shutdown
+        ;;
+
+    $reboot)
+        reboot
+        ;;
+
+    $sleep)
+        susp
+        ;;
+
+    $hibernate)
+        hibernate
+        ;;
+
+    $windows)
+        windowsreboot
+        ;;
+
+    $logout)
+        i3-msg exit
+        ;;
+
+    $lock)
+        lock
+        ;;
+esac
