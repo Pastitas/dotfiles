@@ -367,6 +367,7 @@ assign [ class="brave-browser"] $workspace10
 ###  Interactive menus    ###
 #############################
 # Set shut down, restart and locking features
+bindsym $mod+Shift+Escape exec $HOME/.config/regolith/i3/i3exit rofi
 bindsym $mod+Shift+Escape mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, reboot to (w)indows ,(h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
