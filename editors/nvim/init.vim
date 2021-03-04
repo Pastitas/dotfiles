@@ -38,7 +38,7 @@ let g:gtd#dir = '~/notes'
 " Base16 Colorscheme and adjustments http://chriskempson.com/projects/base16/
 if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256
-    source ~/.vimrc_background
+    source ~/.config/nvim/colorscheme.vim
 endif
 autocmd VimEnter * hi Normal ctermbg=none
 let g:airline_theme='base16_atelier_forest'
