@@ -36,7 +36,7 @@ noremap <F5> :MundoToggle<CR>
 let g:gtd#dir = '~/notes'
 
 " Base16 Colorscheme and adjustments http://chriskempson.com/projects/base16/
-if filereadable(expand("~/.vimrc_background"))
+if filereadable(expand("~/.config/nvim/colorscheme.vim"))
     let base16colorspace=256
     source ~/.config/nvim/colorscheme.vim
 endif
