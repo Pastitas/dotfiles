@@ -96,7 +96,7 @@ selected="$(echo -e "$options" |
 case $selected in
 
     $shutdown)
-        systemct poweroff
+        systemctl poweroff
         ;;
 
     $reboot)
