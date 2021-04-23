@@ -401,6 +401,7 @@ exec --no-startup-id syncthing-gtk -m
 
 ##Startup layout
 # exec --no-startup-id $HOME/.config/i3/workstation
+exec --no-startup-id $HOME/.screenlayout/fix.sh
 
 
 #############################
