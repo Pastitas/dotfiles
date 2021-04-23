@@ -16,6 +16,7 @@ susp() {
     pkill -u "$USER" -USR1 dunst;
     # lock the screen
     i3lock-fancy-rapid 10 pixel && dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Suspend" boolean:true 
+    systemctl suspend
     # resume message display
     wait $pid pkill -u "$USER" -USR2 dunst;
 }
@@ -96,11 +97,11 @@ selected="$(echo -e "$options" |
 case $selected in
 
     $shutdown)
-        shutdown
+        systemctl poweroff
         ;;
 
     $reboot)
-        reboot
+        systemctl reboot
         ;;
 
     $sleep)
