@@ -63,6 +63,10 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #############################################################
 #                        OhMyZsh options                    #
 #############################################################
+
+# Allow [ or ] wherever you want
+unsetopt nomatch
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -114,6 +118,7 @@ HIST_STAMPS="mm/dd/yyyy"
      #vi-mode
      gitfast
      git-flow
+     terraform
      zsh-z
      zsh-autosuggestions
    )

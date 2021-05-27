@@ -1,6 +1,7 @@
 # Please see http://i3wm.orgdocs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
+# set $mod Mod1
 set $mod Mod4
 set $editor terminator
 
@@ -244,6 +245,7 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="Virtualbox"] floating enable border normal
+for_window [class="KeePassXC"]floating enable sticky enable border normal
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -405,6 +407,7 @@ exec --no-startup-id mons -a
 exec --no-startup-id dunst
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id syncthing-gtk -m
+exec --no-startup-id aw-qt
 
 ##Startup layout
 # exec --no-startup-id $HOME/.config/regolith/i3/workstation
@@ -430,3 +433,4 @@ bindsym $mod+Print exec scrot -ue 'mv $f $HOME/Pictures/Screenshots' && sleep 1 
 bindsym $mod+Ctrl+x exec xkill
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+bindsym $mod+Ctrl+v sh -c 'sleep 0.5; xdotool type "$(xclip -o -selection clipboard)"'
